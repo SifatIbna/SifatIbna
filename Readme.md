@@ -17,11 +17,9 @@ Top languages:
 
 - I'm passionate about Machine Learning and Data Science and worked on multiple projects. Check out my Github Repo.
 
--  I'm learning about system design, cloud computing architecture and various Computer Vision and NLP topics.
-
 - I’m looking for internships, remote work oppurtunities (Part Time), interesting software projects and research oppurtunities in Machine Learning and Data Science.
 
 # Contact Info
 
 You can find me on :
-- [Linkedin](www.linkedin.com/in/sifatibnaamin9)
+- [Linkedin](https://www.linkedin.com/in/sifatibnaamin9)

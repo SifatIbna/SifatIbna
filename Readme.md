@@ -1,12 +1,21 @@
+<p align="center">
+  <img src="https://github.com/SifatIbna/SifatIbna/blob/master/readme.gif">
+</p>`
+
+## :rainbow: Hey Profile Visitor :eyes:<img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px">
+
 # About ME
 
-I am [Sifat Ibna Amin](https://sifatibna.github.io/Portfolio/) from **Bangladesh**.
+I am **Sifat Ibna Amin** from **Bangladesh**. 😄
+
 Currently, I am an undergraduate student at **Bangladesh University of Engineering and Technology(BUET)**. My major topic is **Computer Science and Engineering**. 👨‍🎓
+
+### Wanna stalk my website:question::point_right: [Click Here](https://sifatibna.github.io/Portfolio/):sparkles:
 
 # STATS
 
 Overall Stats:
-![Latif's github stats](https://github-readme-stats.vercel.app/api?username=SifatIbna&show_icons=true&theme=radical&count_private=true)
+![Sifat's github stats](https://github-readme-stats.vercel.app/api?username=SifatIbna&show_icons=true&theme=radical&count_private=true)
 
 Top languages:
 
@@ -20,7 +29,6 @@ Top languages:
 
 - I’m looking for internships, remote work oppurtunities (Part Time), interesting software projects and research oppurtunities in Machine Learning and Data Science.
 
-# Contact Info
-
-You can find me on :
-- [Linkedin](https://www.linkedin.com/in/sifatibnaamin9)
+### How to connect with me:question::email:
+:star: <code>[Mail](mailto:sifatibna.amin9@gmail.com)</code>  
+:star: <code>[LinkedIn](https://www.linkedin.com/in/sifatibnaamin9)</code>  

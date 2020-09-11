@@ -8,7 +8,7 @@ I am **Sifat Ibna Amin** from **Bangladesh**. 😄
 
 Currently, I am an undergraduate student at **Bangladesh University of Engineering and Technology(BUET)**. My major topic is **Computer Science and Engineering**. 👨‍🎓
 
-### Wanna stalk my website:question::point_right: [Click Here](https://sifatibna.github.io/Portfolio/):sparkles:
+### Wanna see my Portfolio:question::point_right: [Click Here](https://sifatibna.github.io/Portfolio/):sparkles:
 
 # STATS
 

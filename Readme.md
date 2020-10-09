@@ -2,7 +2,7 @@
   <img src="https://github.com/SifatIbna/SifatIbna/blob/master/readme.gif">
 </p>`
 
-## :rainbow: Hey Profile Visitor :eyes:<img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px">
+## Hey Profile Visitor :eyes:<img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px">
 
 I am **Sifat Ibna Amin** from **Bangladesh**. 😄
 

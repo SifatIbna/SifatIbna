@@ -6,7 +6,7 @@
 
 I am **Sifat Ibna Amin** from **Bangladesh**. 😄
 
-I from **Bangladesh University of Engineering and Technology(BUET)**. My major topic is **Computer Science and Engineering**. 👨‍🎓 Currently, I am working on multiple Open Source Projects, and contributing on daily basis
+I graduated from **Bangladesh University of Engineering and Technology(BUET)**. My major topic is **Computer Science and Engineering**. 👨‍🎓 Currently, I am working on multiple Open Source Projects, and contributing on daily basis
 
 ### Wanna see my Portfolio:question::point_right: [Click Here](https://sifatibna.github.io/Portfolio/):sparkles:
 

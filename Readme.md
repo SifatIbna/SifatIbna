@@ -6,7 +6,9 @@
 
 I am **Sifat Ibna Amin** from **Bangladesh**. 😄
 
-I graduated from **Bangladesh University of Engineering and Technology(BUET)**. My major topic is **Computer Science and Engineering**. 👨‍🎓 Currently, I am working on multiple Open Source Projects, and contributing on daily basis
+I’m a Software Engineer with years of experience building scalable web platforms, APIs, cloud-native systems, and AI-driven applications. I specialize in backend development (Python, Django, FastAPI), DevOps (Kubernetes, Docker, AWS, Azure), and data engineering (ETL, PostgreSQL, Tableau).
+
+I’ve delivered projects ranging from secure EdTech certification systems and AI-powered analytics dashboards to real-time applications and automation pipelines. Whether it’s designing robust backend systems, optimizing cloud infrastructure, or integrating AI solutions, I focus on creating reliable, high-performance software that helps businesses scale
 
 ### Wanna see my Portfolio:question::point_right: [Click Here](https://sifatibna.github.io/Portfolio/):sparkles:
 

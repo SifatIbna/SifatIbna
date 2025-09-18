@@ -10,7 +10,7 @@ I’m a Software Engineer with years of experience building scalable web platfor
 
 I’ve delivered projects ranging from secure EdTech certification systems and AI-powered analytics dashboards to real-time applications and automation pipelines. Whether it’s designing robust backend systems, optimizing cloud infrastructure, or integrating AI solutions, I focus on creating reliable, high-performance software that helps businesses scale
 
-### Wanna see my Portfolio? [Click Here](https://sifatibna.github.io/Portfolio/):sparkles:
+### Wanna see my Portfolio? [Click Here](https://sifat-portflio.netlify.app/):sparkles:
 
 # STATS
 

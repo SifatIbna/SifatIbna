@@ -1,0 +1,355 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="580" viewBox="0 0 600 580">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#030610"/><stop offset="60%" style="stop-color:#081020"/><stop offset="100%" style="stop-color:#0c1a30"/>
+    </linearGradient>
+    <linearGradient id="ground-top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e1a2c"/><stop offset="100%" style="stop-color:#0a1220"/>
+    </linearGradient>
+    <linearGradient id="under" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d18"/><stop offset="100%" style="stop-color:#040710"/>
+    </linearGradient>
+    <linearGradient id="glow-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:0"/><stop offset="50%" style="stop-color:#58a6ff;stop-opacity:0.5"/><stop offset="100%" style="stop-color:#58a6ff;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="sh"><feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/></filter>
+    <filter id="gl"><feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#58a6ff" flood-opacity="0.15"/></filter>
+    <filter id="cbl"><feGaussianBlur stdDeviation="4"/></filter>
+  </defs>
+
+  <style>
+    @keyframes rise { from{transform:translateY(40px);opacity:0} to{transform:translateY(0);opacity:1} }
+    @keyframes cloudFloat { 0%,100%{transform:translate(0,0)} 50%{transform:translate(10px,-3px)} }
+    @keyframes cloudFloat2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-8px,2px)} }
+    @keyframes winFlicker { 0%{opacity:0.15} 20%{opacity:0.7} 40%{opacity:0.2} 60%{opacity:0.8} 80%{opacity:0.1} 100%{opacity:0.5} }
+    @keyframes winFlicker2 { 0%{opacity:0.4} 25%{opacity:0.1} 50%{opacity:0.6} 75%{opacity:0.3} 100%{opacity:0.7} }
+    @keyframes starTwinkle { 0%,100%{opacity:0.15} 50%{opacity:0.8} }
+    @keyframes groundGlow { 0%,100%{opacity:0.3} 50%{opacity:0.7} }
+    @keyframes underReveal { from{opacity:0;transform:translateY(-10px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes antennaPulse { 0%,100%{opacity:0.4;r:2} 50%{opacity:1;r:3.5} }
+    @keyframes signal { 0%{r:3;opacity:0.5} 100%{r:14;opacity:0} }
+    @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+
+    .r1{animation:rise 0.8s ease-out 0.3s both}
+    .r2{animation:rise 0.8s ease-out 0.45s both}
+    .r3{animation:rise 0.8s ease-out 0.6s both}
+    .r4{animation:rise 0.8s ease-out 0.75s both}
+    .r5{animation:rise 0.8s ease-out 0.9s both}
+    .r6{animation:rise 0.8s ease-out 1.05s both}
+    .r7{animation:rise 0.8s ease-out 1.2s both}
+    .cf1{animation:cloudFloat 10s ease-in-out infinite}
+    .cf2{animation:cloudFloat2 12s ease-in-out infinite}
+    .cf3{animation:cloudFloat 14s ease-in-out 1s infinite}
+    .cf4{animation:cloudFloat2 11s ease-in-out 2s infinite}
+    .cf5{animation:cloudFloat 13s ease-in-out 0.5s infinite}
+    .cf6{animation:cloudFloat2 9s ease-in-out 1.5s infinite}
+    .wf{animation:winFlicker 4s ease-in-out infinite}
+    .wf2{animation:winFlicker2 5s ease-in-out 1s infinite}
+    .wf3{animation:winFlicker 3.5s ease-in-out 2s infinite}
+    .st{animation:starTwinkle 3s ease-in-out infinite}
+    .st2{animation:starTwinkle 4.5s ease-in-out 1s infinite}
+    .st3{animation:starTwinkle 5s ease-in-out 2s infinite}
+    .gg{animation:groundGlow 3s ease-in-out infinite}
+    .ur1{animation:underReveal 0.6s ease-out 1.5s both}
+    .ur2{animation:underReveal 0.6s ease-out 1.7s both}
+    .ur3{animation:underReveal 0.6s ease-out 1.9s both}
+    .ur4{animation:underReveal 0.6s ease-out 2.1s both}
+    .ap{animation:antennaPulse 2s ease-in-out infinite}
+    .sig{animation:signal 2s ease-out infinite}
+    .fi{animation:fadeIn 0.4s ease-out 0.1s both}
+
+    .lbl{fill:#fff;font-family:'Segoe UI',sans-serif;font-size:8.5px;font-weight:700;text-anchor:middle}
+    .clbl{fill:#fff;font-family:'Segoe UI',sans-serif;font-size:8px;font-weight:700;text-anchor:middle}
+    .slbl{fill:#8b949e;font-family:'Segoe UI',monospace;font-size:7.5px;font-weight:600;letter-spacing:2px}
+    .title{fill:#fff;font-family:'Segoe UI',sans-serif;font-size:12px;font-weight:800;text-anchor:middle;letter-spacing:1px}
+    .dlbl{fill:#fff;font-family:'Segoe UI',sans-serif;font-size:8px;font-weight:700;text-anchor:middle}
+  </style>
+
+  <!-- ═══ SKY ═══ -->
+  <rect fill="url(#sky)" width="600" height="580"/>
+
+  <!-- Stars -->
+  <circle class="st" cx="45" cy="20" r="0.8" fill="#fff"/>
+  <circle class="st2" cx="130" cy="40" r="0.6" fill="#fff"/>
+  <circle class="st3" cx="250" cy="15" r="0.8" fill="#fff"/>
+  <circle class="st" cx="380" cy="30" r="0.6" fill="#fff"/>
+  <circle class="st2" cx="490" cy="18" r="0.8" fill="#fff"/>
+  <circle class="st3" cx="560" cy="42" r="0.6" fill="#fff"/>
+  <circle class="st" cx="80" cy="58" r="0.5" fill="#fff"/>
+  <circle class="st2" cx="320" cy="50" r="0.5" fill="#fff"/>
+  <circle class="st3" cx="530" cy="65" r="0.5" fill="#fff"/>
+
+  <!-- Title -->
+  <g class="fi">
+    <text class="title" x="300" y="18">⚔️ TECH ARSENAL</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ☁️ CLOUD PLATFORMS — floating isometric     -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g class="fi"><text class="slbl" x="12" y="45">☁ CLOUD</text></g>
+
+  <!-- AWS — isometric floating platform -->
+  <g class="cf1" filter="url(#sh)">
+    <!-- Top face (diamond) -->
+    <polygon points="70,75 110,60 150,75 110,90" fill="#ff9900" opacity="0.12"/>
+    <polygon points="70,75 110,60 150,75 110,90" fill="none" stroke="#ff9900" stroke-width="0.8" stroke-opacity="0.5"/>
+    <!-- Left face (thin) -->
+    <polygon points="70,75 110,90 110,97 70,82" fill="#cc7a00" opacity="0.15"/>
+    <!-- Right face (thin) -->
+    <polygon points="150,75 110,90 110,97 150,82" fill="#e68a00" opacity="0.12"/>
+    <text class="clbl" x="110" y="82" fill="#ff9900">AWS</text>
+  </g>
+
+  <!-- Azure -->
+  <g class="cf2" filter="url(#sh)">
+    <polygon points="175,60 215,45 255,60 215,75" fill="#0078d4" opacity="0.12"/>
+    <polygon points="175,60 215,45 255,60 215,75" fill="none" stroke="#0078d4" stroke-width="0.8" stroke-opacity="0.5"/>
+    <polygon points="175,60 215,75 215,82 175,67" fill="#005ba1" opacity="0.15"/>
+    <polygon points="255,60 215,75 215,82 255,67" fill="#0068b8" opacity="0.12"/>
+    <text class="clbl" x="215" y="67" fill="#0078d4">Azure</text>
+  </g>
+
+  <!-- Kubernetes -->
+  <g class="cf3" filter="url(#sh)">
+    <polygon points="278,73 318,58 358,73 318,88" fill="#326ce5" opacity="0.12"/>
+    <polygon points="278,73 318,58 358,73 318,88" fill="none" stroke="#326ce5" stroke-width="0.8" stroke-opacity="0.5"/>
+    <polygon points="278,73 318,88 318,95 278,80" fill="#2555b3" opacity="0.15"/>
+    <polygon points="358,73 318,88 318,95 358,80" fill="#2a5fc9" opacity="0.12"/>
+    <text class="clbl" x="318" y="82" fill="#326ce5">K8s</text>
+  </g>
+
+  <!-- Docker -->
+  <g class="cf4" filter="url(#sh)">
+    <polygon points="380,58 420,43 460,58 420,73" fill="#2496ed" opacity="0.12"/>
+    <polygon points="380,58 420,43 460,58 420,73" fill="none" stroke="#2496ed" stroke-width="0.8" stroke-opacity="0.5"/>
+    <polygon points="380,58 420,73 420,80 380,65" fill="#1c78c0" opacity="0.15"/>
+    <polygon points="460,58 420,73 420,80 460,65" fill="#1f86d6" opacity="0.12"/>
+    <text class="clbl" x="420" y="67" fill="#2496ed">Docker</text>
+  </g>
+
+  <!-- Jenkins -->
+  <g class="cf5" filter="url(#sh)">
+    <polygon points="470,72 505,59 540,72 505,85" fill="#d33833" opacity="0.12"/>
+    <polygon points="470,72 505,59 540,72 505,85" fill="none" stroke="#d33833" stroke-width="0.8" stroke-opacity="0.5"/>
+    <polygon points="470,72 505,85 505,91 470,78" fill="#a82c28" opacity="0.15"/>
+    <polygon points="540,72 505,85 505,91 540,78" fill="#b9302c" opacity="0.12"/>
+    <text class="clbl" x="505" y="80" fill="#d33833">Jenkins</text>
+  </g>
+
+  <!-- ArgoCD (small) -->
+  <g class="cf6" filter="url(#sh)">
+    <polygon points="130,100 160,89 190,100 160,111" fill="#f0883e" opacity="0.1"/>
+    <polygon points="130,100 160,89 190,100 160,111" fill="none" stroke="#f0883e" stroke-width="0.7" stroke-opacity="0.4"/>
+    <polygon points="130,100 160,111 160,116 130,105" fill="#c06e32" opacity="0.12"/>
+    <polygon points="190,100 160,111 160,116 190,105" fill="#d67a36" opacity="0.1"/>
+    <text class="clbl" x="160" y="107" fill="#f0883e">ArgoCD</text>
+  </g>
+
+  <!-- Git (small) -->
+  <g class="cf4" filter="url(#sh)">
+    <polygon points="420,92 450,81 480,92 450,103" fill="#f05032" opacity="0.1"/>
+    <polygon points="420,92 450,81 480,92 450,103" fill="none" stroke="#f05032" stroke-width="0.7" stroke-opacity="0.4"/>
+    <polygon points="420,92 450,103 450,108 420,97" fill="#c04028" opacity="0.12"/>
+    <polygon points="480,92 450,103 450,108 480,97" fill="#d8482e" opacity="0.1"/>
+    <text class="clbl" x="450" y="100" fill="#f05032">Git</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- 🏙️ ISOMETRIC BUILDINGS — Back row first    -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g class="fi"><text class="slbl" x="12" y="140">🏗 LANGUAGES</text></g>
+
+  <!-- *** BACK ROW *** -->
+
+  <!-- PYTHON — tallest (cx=135, cy=205, s=28, h=120) -->
+  <g class="r1" filter="url(#sh)">
+    <!-- Top face -->
+    <polygon points="135,191 163,205 135,219 107,205" fill="#3674b5"/>
+    <!-- Left face -->
+    <polygon points="107,205 135,219 135,339 107,325" fill="#1e3f6f"/>
+    <!-- Right face -->
+    <polygon points="163,205 135,219 135,339 163,325" fill="#264d85"/>
+    <!-- Windows left face -->
+    <rect class="wf" x="112" y="220" width="5" height="5" fill="#fde68a" opacity="0.4" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf2" x="112" y="240" width="5" height="5" fill="#fde68a" opacity="0.3" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf3" x="112" y="260" width="5" height="5" fill="#fde68a" opacity="0.5" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf" x="120" y="220" width="5" height="5" fill="#fde68a" opacity="0.3" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf2" x="120" y="240" width="5" height="5" fill="#fde68a" opacity="0.6" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf3" x="120" y="260" width="5" height="5" fill="#fde68a" opacity="0.2" rx="0.5" transform="skewY(26)"/>
+    <!-- Windows right face -->
+    <rect class="wf2" x="142" y="236" width="5" height="5" fill="#fde68a" opacity="0.4" rx="0.5" transform="skewY(-26)"/>
+    <rect class="wf" x="142" y="256" width="5" height="5" fill="#fde68a" opacity="0.5" rx="0.5" transform="skewY(-26)"/>
+    <rect class="wf3" x="150" y="236" width="5" height="5" fill="#fde68a" opacity="0.3" rx="0.5" transform="skewY(-26)"/>
+    <rect class="wf2" x="150" y="256" width="5" height="5" fill="#fde68a" opacity="0.6" rx="0.5" transform="skewY(-26)"/>
+    <!-- Antenna -->
+    <line x1="135" y1="191" x2="135" y2="170" stroke="#58a6ff" stroke-width="1"/>
+    <circle class="ap" cx="135" cy="168" r="2.5" fill="#58a6ff"/>
+    <circle class="sig" cx="135" cy="168" r="4" fill="none" stroke="#58a6ff" stroke-width="0.5"/>
+    <text x="135" y="161" fill="#6e7681" font-family="'Segoe UI',monospace" font-size="6" text-anchor="middle">🤖 AI</text>
+    <!-- Label -->
+    <text class="lbl" x="135" y="353" fill="#93c5fd">PYTHON</text>
+  </g>
+
+  <!-- TYPESCRIPT (cx=225, cy=200, s=25, h=100) -->
+  <g class="r2" filter="url(#sh)">
+    <polygon points="225,188 250,200 225,212 200,200" fill="#3178c6"/>
+    <polygon points="200,200 225,212 225,312 200,300" fill="#1c4576"/>
+    <polygon points="250,200 225,212 225,312 250,300" fill="#24569a"/>
+    <rect class="wf3" x="205" y="218" width="5" height="5" fill="#fde68a" opacity="0.4" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf" x="205" y="238" width="5" height="5" fill="#fde68a" opacity="0.3" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf2" x="213" y="218" width="5" height="5" fill="#fde68a" opacity="0.5" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf3" x="213" y="238" width="5" height="5" fill="#fde68a" opacity="0.2" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf" x="232" y="228" width="5" height="5" fill="#fde68a" opacity="0.4" rx="0.5" transform="skewY(-26)"/>
+    <rect class="wf2" x="232" y="248" width="5" height="5" fill="#fde68a" opacity="0.5" rx="0.5" transform="skewY(-26)"/>
+    <rect class="wf3" x="240" y="228" width="5" height="5" fill="#fde68a" opacity="0.3" rx="0.5" transform="skewY(-26)"/>
+    <text class="lbl" x="225" y="326" fill="#93c5fd">TS</text>
+  </g>
+
+  <!-- JAVA (cx=310, cy=205, s=24, h=90) -->
+  <g class="r3" filter="url(#sh)">
+    <polygon points="310,193 334,205 310,217 286,205" fill="#e76f00"/>
+    <polygon points="286,205 310,217 310,307 286,295" fill="#8a4200"/>
+    <polygon points="334,205 310,217 310,307 334,295" fill="#b85800"/>
+    <rect class="wf2" x="291" y="222" width="5" height="5" fill="#fde68a" opacity="0.3" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf" x="291" y="242" width="5" height="5" fill="#fde68a" opacity="0.5" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf3" x="299" y="222" width="5" height="5" fill="#fde68a" opacity="0.4" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf" x="316" y="232" width="5" height="5" fill="#fde68a" opacity="0.5" rx="0.5" transform="skewY(-26)"/>
+    <rect class="wf2" x="316" y="252" width="5" height="5" fill="#fde68a" opacity="0.3" rx="0.5" transform="skewY(-26)"/>
+    <text class="lbl" x="310" y="321" fill="#fdba74">JAVA</text>
+  </g>
+
+  <!-- C++ (cx=390, cy=210, s=22, h=75) -->
+  <g class="r3" filter="url(#sh)">
+    <polygon points="390,199 412,210 390,221 368,210" fill="#659ad2"/>
+    <polygon points="368,210 390,221 390,296 368,285" fill="#3a5a7c"/>
+    <polygon points="412,210 390,221 390,296 412,285" fill="#4d78a8"/>
+    <rect class="wf" x="373" y="228" width="4" height="4" fill="#fde68a" opacity="0.4" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf3" x="373" y="245" width="4" height="4" fill="#fde68a" opacity="0.3" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf2" x="396" y="238" width="4" height="4" fill="#fde68a" opacity="0.5" rx="0.5" transform="skewY(-26)"/>
+    <text class="lbl" x="390" y="310" fill="#93c5fd">C++</text>
+  </g>
+
+  <!-- *** FRONT ROW — Frameworks *** -->
+  <g class="fi"><text class="slbl" x="12" y="290">🔧 FRAMEWORKS</text></g>
+
+  <!-- DJANGO (cx=165, cy=310, s=22, h=70) -->
+  <g class="r4" filter="url(#sh)">
+    <polygon points="165,299 187,310 165,321 143,310" fill="#0c4b33"/>
+    <polygon points="143,310 165,321 165,391 143,380" fill="#07301f"/>
+    <polygon points="187,310 165,321 165,391 187,380" fill="#093d28"/>
+    <rect class="wf3" x="148" y="328" width="4" height="4" fill="#fde68a" opacity="0.4" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf" x="148" y="345" width="4" height="4" fill="#fde68a" opacity="0.3" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf2" x="171" y="338" width="4" height="4" fill="#fde68a" opacity="0.5" rx="0.5" transform="skewY(-26)"/>
+    <text class="lbl" x="165" y="405" fill="#4ade80">DJANGO</text>
+  </g>
+
+  <!-- REACT (cx=245, cy=315, s=22, h=65) -->
+  <g class="r5" filter="url(#sh)">
+    <polygon points="245,304 267,315 245,326 223,315" fill="#087ea4"/>
+    <polygon points="223,315 245,326 245,391 223,380" fill="#054f68"/>
+    <polygon points="267,315 245,326 245,391 267,380" fill="#066a8a"/>
+    <rect class="wf" x="228" y="333" width="4" height="4" fill="#fde68a" opacity="0.3" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf2" x="228" y="350" width="4" height="4" fill="#fde68a" opacity="0.5" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf3" x="251" y="343" width="4" height="4" fill="#fde68a" opacity="0.4" rx="0.5" transform="skewY(-26)"/>
+    <text class="lbl" x="245" y="405" fill="#61dafb">REACT</text>
+  </g>
+
+  <!-- NODE (cx=320, cy=318, s=20, h=58) -->
+  <g class="r6" filter="url(#sh)">
+    <polygon points="320,308 340,318 320,328 300,318" fill="#3c873a"/>
+    <polygon points="300,318 320,328 320,386 300,376" fill="#275226"/>
+    <polygon points="340,318 320,328 320,386 340,376" fill="#306c2e"/>
+    <rect class="wf2" x="305" y="335" width="4" height="4" fill="#fde68a" opacity="0.4" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf3" x="326" y="343" width="4" height="4" fill="#fde68a" opacity="0.3" rx="0.5" transform="skewY(-26)"/>
+    <text class="lbl" x="320" y="400" fill="#68d96a">NODE</text>
+  </g>
+
+  <!-- NESTJS (cx=390, cy=322, s=19, h=50) -->
+  <g class="r6" filter="url(#sh)">
+    <polygon points="390,312 409,322 390,332 371,322" fill="#e0234e"/>
+    <polygon points="371,322 390,332 390,382 371,372" fill="#8a1530"/>
+    <polygon points="409,322 390,332 390,382 409,372" fill="#b31c3f"/>
+    <rect class="wf" x="376" y="340" width="4" height="4" fill="#fde68a" opacity="0.3" rx="0.5" transform="skewY(26)"/>
+    <rect class="wf2" x="396" y="348" width="4" height="4" fill="#fde68a" opacity="0.5" rx="0.5" transform="skewY(-26)"/>
+    <text class="lbl" x="390" y="396" fill="#f0757a">NEST</text>
+  </g>
+
+  <!-- SPRING (cx=455, cy=325, s=18, h=45) -->
+  <g class="r7" filter="url(#sh)">
+    <polygon points="455,316 473,325 455,334 437,325" fill="#6db33f"/>
+    <polygon points="437,325 455,334 455,379 437,370" fill="#426a26"/>
+    <polygon points="473,325 455,334 455,379 473,370" fill="#548d32"/>
+    <rect class="wf3" x="442" y="342" width="4" height="4" fill="#fde68a" opacity="0.4" rx="0.5" transform="skewY(26)"/>
+    <text class="lbl" x="455" y="393" fill="#86d65a">SPRING</text>
+  </g>
+
+  <!-- FLASK (cx=515, cy=328, s=16, h=38) -->
+  <g class="r7" filter="url(#sh)">
+    <polygon points="515,320 531,328 515,336 499,328" fill="#4a4a4a"/>
+    <polygon points="499,328 515,336 515,374 499,366" fill="#2a2a2a"/>
+    <polygon points="531,328 515,336 515,374 531,366" fill="#3a3a3a"/>
+    <rect class="wf" x="504" y="344" width="3" height="3" fill="#fde68a" opacity="0.3" rx="0.5" transform="skewY(26)"/>
+    <text class="lbl" x="515" y="388" fill="#999">FLASK</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- GROUND LINE                                -->
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- Isometric ground plane -->
+  <polygon points="0,420 300,350 600,420 300,490" fill="url(#ground-top)" opacity="0.3"/>
+  <rect class="gg" fill="url(#glow-line)" x="0" y="418" width="600" height="2"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- 🗄️ UNDERGROUND — Databases                 -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect fill="url(#under)" x="0" y="420" width="600" height="160"/>
+  <line x1="0" y1="450" x2="600" y2="450" stroke="#0e1520" stroke-width="0.5"/>
+  <line x1="0" y1="480" x2="600" y2="480" stroke="#0c1218" stroke-width="0.5"/>
+  <line x1="0" y1="510" x2="600" y2="510" stroke="#0a1016" stroke-width="0.5"/>
+
+  <g class="fi"><text class="slbl" x="12" y="442">🗄 DATA LAYER</text></g>
+
+  <!-- PostgreSQL — isometric cylinder -->
+  <g class="ur1">
+    <polygon points="100,460 140,448 180,460 140,472" fill="#336791" opacity="0.5"/>
+    <polygon points="100,460 140,472 140,502 100,490" fill="#1d3c55" opacity="0.6"/>
+    <polygon points="180,460 140,472 140,502 180,490" fill="#265070" opacity="0.5"/>
+    <polygon points="100,490 140,502 180,490 140,478" fill="#336791" opacity="0.3"/>
+    <text class="dlbl" x="140" y="486" fill="#93c5fd">PostgreSQL</text>
+    <line x1="140" y1="448" x2="140" y2="420" stroke="#336791" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.3"/>
+  </g>
+
+  <!-- MongoDB -->
+  <g class="ur2">
+    <polygon points="210,465 250,453 290,465 250,477" fill="#47a248" opacity="0.5"/>
+    <polygon points="210,465 250,477 250,507 210,495" fill="#2a6129" opacity="0.6"/>
+    <polygon points="290,465 250,477 250,507 290,495" fill="#378238" opacity="0.5"/>
+    <polygon points="210,495 250,507 290,495 250,483" fill="#47a248" opacity="0.3"/>
+    <text class="dlbl" x="250" y="491" fill="#86efac">MongoDB</text>
+    <line x1="250" y1="453" x2="250" y2="420" stroke="#47a248" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.3"/>
+  </g>
+
+  <!-- Redis -->
+  <g class="ur3">
+    <polygon points="320,460 360,448 400,460 360,472" fill="#d82c20" opacity="0.5"/>
+    <polygon points="320,460 360,472 360,502 320,490" fill="#811a14" opacity="0.6"/>
+    <polygon points="400,460 360,472 360,502 400,490" fill="#a82118" opacity="0.5"/>
+    <polygon points="320,490 360,502 400,490 360,478" fill="#d82c20" opacity="0.3"/>
+    <text class="dlbl" x="360" y="486" fill="#fca5a5">Redis</text>
+    <line x1="360" y1="448" x2="360" y2="420" stroke="#d82c20" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.3"/>
+  </g>
+
+  <!-- MySQL -->
+  <g class="ur4">
+    <polygon points="430,465 470,453 510,465 470,477" fill="#00758f" opacity="0.5"/>
+    <polygon points="430,465 470,477 470,507 430,495" fill="#004557" opacity="0.6"/>
+    <polygon points="510,465 470,477 470,507 510,495" fill="#005d75" opacity="0.5"/>
+    <polygon points="430,495 470,507 510,495 470,483" fill="#00758f" opacity="0.3"/>
+    <text class="dlbl" x="470" y="491" fill="#67e8f9">MySQL</text>
+    <line x1="470" y1="453" x2="470" y2="420" stroke="#00758f" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.3"/>
+  </g>
+
+  <!-- Footer -->
+  <text x="300" y="545" text-anchor="middle" fill="#4a5568" font-family="'Segoe UI',sans-serif" font-size="7.5">Every tool battle-tested in production · Serving thousands of users across Asia</text>
+</svg>

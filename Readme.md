@@ -44,37 +44,7 @@ I graduated from **BUET** (Bangladesh University of Engineering and Technology),
 The tools I reach for daily — all battle-tested in production:
 
 <div align="center">
-
-**Languages I think in**
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=python,typescript,javascript,java,cpp,bash&theme=dark" alt="Languages"/>
-</a>
-
-**Frameworks I build with**
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=django,react,flask,spring,nodejs,nestjs,express&theme=dark" alt="Frameworks"/>
-</a>
-
-**Cloud & DevOps**
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=aws,azure,kubernetes,docker,jenkins,git&theme=dark" alt="Cloud"/>
-</a>
-
-**Databases**
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=postgresql,mongodb,redis,mysql&theme=dark" alt="Databases"/>
-</a>
-
-**AI/ML & Testing**
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=tensorflow,opencv,jest,cypress&theme=dark" alt="AI and Testing"/>
-</a>
-
+  <img width="600" src="./tech-arsenal.svg" alt="Tech Arsenal"/>
 </div>
 
 ---

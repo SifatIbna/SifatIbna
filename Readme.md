@@ -8,7 +8,7 @@
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:0d1117,30:0a1628,60:0f2440,100:1a3a5c&height=200&section=header&text=SIFAT%20IBNA%20AMIN&fontSize=48&fontColor=58a6ff&fontAlignY=40&desc=%E2%94%80%E2%94%80%E2%94%80%20%20Transforming%20Business%20using%20AI%20%26%20Software%20Engineering%20%20%E2%94%80%E2%94%80%E2%94%80&descSize=14&descAlignY=62&descAlign=50&animation=fadeIn&stroke=1f6feb&strokeWidth=1"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=200&section=header&text=SIFAT%20IBNA%20AMIN&fontSize=50&fontColor=58a6ff&fontAlignY=35&desc=Transforming%20Business%20using%20AI%20and%20Software%20Engineering&descSize=16&descAlignY=55&descAlign=50&animation=fadeIn"/>
 
 <br/>
 
@@ -244,4 +244,45 @@ on concurrent financial systems.
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,30:0a1628,60:0f2440,100:1a3a5c&height=100&section=footer&stroke=1f6feb&strokeWidth=1"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=100&section=footer"/>
+
+<!--
+    ┌───────────────────────────────────────────────────────┐
+    │  🐍 SNAKE ANIMATION SETUP                            │
+    │                                                       │
+    │  1. Create file: .github/workflows/snake.yml          │
+    │  2. Paste the workflow below                          │
+    │  3. Go to Actions tab → Run workflow manually once    │
+    │  4. It will auto-run every 12 hours after that        │
+    └───────────────────────────────────────────────────────┘
+
+    name: Generate Snake
+
+    on:
+      schedule:
+        - cron: "0 */12 * * *"
+      workflow_dispatch:
+
+    jobs:
+      generate:
+        runs-on: ubuntu-latest
+        timeout-minutes: 10
+        steps:
+          - name: generate github-contribution-grid-snake.svg
+            uses: Platane/snk/svg-only@v3
+            with:
+              github_user_name: ${{ github.repository_owner }}
+              outputs: |
+                dist/github-contribution-grid-snake.svg
+                dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            env:
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          - name: push to output branch
+            uses: crazy-max/ghaction-github-pages@v3.1.0
+            with:
+              target_branch: output
+              build_dir: dist
+            env:
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+-->

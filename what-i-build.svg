@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="520" viewBox="0 0 850 520">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e17"/><stop offset="100%" style="stop-color:#080c14"/>
+    </linearGradient>
+    <filter id="card-shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow-blue">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feFlood flood-color="#58a6ff" flood-opacity="0.4" result="c"/>
+      <feComposite in="c" in2="b" operator="in" result="d"/>
+      <feMerge><feMergeNode in="d"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-green">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feFlood flood-color="#3fb950" flood-opacity="0.4" result="c"/>
+      <feComposite in="c" in2="b" operator="in" result="d"/>
+      <feMerge><feMergeNode in="d"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-purple">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feFlood flood-color="#bc8cff" flood-opacity="0.4" result="c"/>
+      <feComposite in="c" in2="b" operator="in" result="d"/>
+      <feMerge><feMergeNode in="d"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-orange">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feFlood flood-color="#f0883e" flood-opacity="0.4" result="c"/>
+      <feComposite in="c" in2="b" operator="in" result="d"/>
+      <feMerge><feMergeNode in="d"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Card backgrounds -->
+    <linearGradient id="card-ai" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1a2d"/><stop offset="100%" style="stop-color:#0f1520"/>
+    </linearGradient>
+    <linearGradient id="card-bc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0d2d"/><stop offset="100%" style="stop-color:#150f20"/>
+    </linearGradient>
+    <linearGradient id="card-cl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d2d1a"/><stop offset="100%" style="stop-color:#0f2015"/>
+    </linearGradient>
+    <linearGradient id="card-de" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1a0d"/><stop offset="100%" style="stop-color:#20150f"/>
+    </linearGradient>
+
+    <!-- Hub radial glow -->
+    <radialGradient id="hub-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#58a6ff;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    @keyframes cardIn1 { from{opacity:0;transform:translate(-20px,-20px)} to{opacity:1;transform:translate(0,0)} }
+    @keyframes cardIn2 { from{opacity:0;transform:translate(20px,-20px)} to{opacity:1;transform:translate(0,0)} }
+    @keyframes cardIn3 { from{opacity:0;transform:translate(-20px,20px)} to{opacity:1;transform:translate(0,0)} }
+    @keyframes cardIn4 { from{opacity:0;transform:translate(20px,20px)} to{opacity:1;transform:translate(0,0)} }
+    @keyframes hubPulse { 0%,100%{r:18;opacity:0.8} 50%{r:22;opacity:1} }
+    @keyframes hubGlow { 0%,100%{r:40;opacity:0.15} 50%{r:50;opacity:0.25} }
+    @keyframes lineFlow { 0%{stroke-dashoffset:20} 100%{stroke-dashoffset:0} }
+    @keyframes linePulse { 0%,100%{opacity:0.15} 50%{opacity:0.5} }
+    @keyframes borderPulse1 { 0%,100%{stroke-opacity:0.2} 50%{stroke-opacity:0.6} }
+    @keyframes borderPulse2 { 0%,100%{stroke-opacity:0.15} 50%{stroke-opacity:0.5} }
+    @keyframes iconFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-3px)} }
+    @keyframes dotPulse { 0%,100%{r:1.5;opacity:0.3} 50%{r:2.5;opacity:0.8} }
+
+    .card-1{animation:cardIn1 0.8s ease-out 0.3s both}
+    .card-2{animation:cardIn2 0.8s ease-out 0.5s both}
+    .card-3{animation:cardIn3 0.8s ease-out 0.7s both}
+    .card-4{animation:cardIn4 0.8s ease-out 0.9s both}
+    .hub-circle{animation:hubPulse 3s ease-in-out infinite}
+    .hub-glow-circle{animation:hubGlow 3s ease-in-out infinite}
+    .conn-line{stroke-dasharray:6 4;animation:lineFlow 2s linear infinite,linePulse 4s ease-in-out infinite}
+    .conn-line2{stroke-dasharray:6 4;animation:lineFlow 2s linear 0.5s infinite,linePulse 4s ease-in-out 1s infinite}
+    .conn-line3{stroke-dasharray:6 4;animation:lineFlow 2s linear 1s infinite,linePulse 4s ease-in-out 2s infinite}
+    .conn-line4{stroke-dasharray:6 4;animation:lineFlow 2s linear 1.5s infinite,linePulse 4s ease-in-out 0.5s infinite}
+    .border-ai{animation:borderPulse1 4s ease-in-out infinite}
+    .border-bc{animation:borderPulse2 4s ease-in-out 1s infinite}
+    .border-cl{animation:borderPulse1 4s ease-in-out 2s infinite}
+    .border-de{animation:borderPulse2 4s ease-in-out 0.5s infinite}
+    .icon-float-1{animation:iconFloat 4s ease-in-out infinite}
+    .icon-float-2{animation:iconFloat 4s ease-in-out 1s infinite}
+    .icon-float-3{animation:iconFloat 4s ease-in-out 2s infinite}
+    .icon-float-4{animation:iconFloat 4s ease-in-out 0.5s infinite}
+    .ambient{animation:dotPulse 3s ease-in-out infinite}
+    .ambient2{animation:dotPulse 4s ease-in-out 1s infinite}
+    .ambient3{animation:dotPulse 3.5s ease-in-out 2s infinite}
+
+    .card-title{fill:#ffffff;font-family:'Segoe UI','Helvetica Neue',sans-serif;font-size:15px;font-weight:700}
+    .card-subtitle{fill:#8b949e;font-family:'Segoe UI',sans-serif;font-size:10.5px;letter-spacing:2px;font-weight:600}
+    .card-desc{fill:#c9d1d9;font-family:'Segoe UI',sans-serif;font-size:11px;line-height:1.4}
+    .card-tech{fill:#6e7681;font-family:'Segoe UI',monospace;font-size:9.5px}
+    .card-metric{font-family:'Segoe UI',monospace;font-size:11px;font-weight:700}
+    .hub-text{fill:#ffffff;font-family:'Segoe UI',sans-serif;font-size:10px;font-weight:700;text-anchor:middle;letter-spacing:1px}
+  </style>
+
+  <!-- Background -->
+  <rect fill="url(#bg)" width="850" height="520" rx="0"/>
+
+  <!-- Ambient particles -->
+  <circle class="ambient" cx="60" cy="80" r="1.5" fill="#58a6ff"/>
+  <circle class="ambient2" cx="790" cy="70" r="1.5" fill="#bc8cff"/>
+  <circle class="ambient3" cx="130" cy="450" r="1.5" fill="#3fb950"/>
+  <circle class="ambient" cx="720" cy="460" r="1.5" fill="#f0883e"/>
+  <circle class="ambient2" cx="400" cy="30" r="1" fill="#58a6ff"/>
+  <circle class="ambient3" cx="450" cy="490" r="1" fill="#58a6ff"/>
+
+  <!-- ═══ CENTER HUB ═══ -->
+  <circle class="hub-glow-circle" cx="425" cy="260" r="45" fill="url(#hub-glow)"/>
+  <circle class="hub-circle" cx="425" cy="260" r="20" fill="#0d1117" stroke="#58a6ff" stroke-width="2"/>
+  <text class="hub-text" x="425" y="257">WHAT I</text>
+  <text class="hub-text" x="425" y="269">BUILD</text>
+
+  <!-- ═══ CONNECTION LINES ═══ -->
+  <line class="conn-line" x1="405" y1="243" x2="230" y2="130" stroke="#58a6ff" stroke-width="1.5"/>
+  <line class="conn-line2" x1="445" y1="243" x2="620" y2="130" stroke="#bc8cff" stroke-width="1.5"/>
+  <line class="conn-line3" x1="405" y1="277" x2="230" y2="390" stroke="#3fb950" stroke-width="1.5"/>
+  <line class="conn-line4" x1="445" y1="277" x2="620" y2="390" stroke="#f0883e" stroke-width="1.5"/>
+
+  <!-- ═══ CARD 1: AI & Co-Learning (Top Left) ═══ -->
+  <g class="card-1">
+    <rect fill="url(#card-ai)" x="20" y="30" width="380" height="200" rx="12" filter="url(#card-shadow)"/>
+    <rect class="border-ai" fill="none" stroke="#58a6ff" stroke-width="1.5" x="20" y="30" width="380" height="200" rx="12"/>
+
+    <!-- Accent bar -->
+    <rect fill="#58a6ff" x="20" y="30" width="380" height="3" rx="12" opacity="0.6"/>
+
+    <!-- Icon -->
+    <g class="icon-float-1">
+      <circle cx="56" cy="68" r="16" fill="#58a6ff" opacity="0.15"/>
+      <text x="49" y="74" font-size="20">🤖</text>
+    </g>
+
+    <text class="card-subtitle" x="82" y="60" fill="#58a6ff">AI &amp; INTELLIGENT SYSTEMS</text>
+    <text class="card-title" x="82" y="80">Co-Learning &amp; AI Agents</text>
+
+    <text class="card-desc" x="40" y="108">Building intelligent systems beyond simple automation.</text>
+    <text class="card-desc" x="40" y="124">Co-Learning platforms that reshape collaborative</text>
+    <text class="card-desc" x="40" y="140">education with real-time speech analysis, adaptive</text>
+    <text class="card-desc" x="40" y="156">feedback, and AI-powered monitoring agents.</text>
+
+    <text class="card-tech" x="40" y="180">Python · Django · YOLOv5 · TensorFlow · CV · NestJS</text>
+
+    <text class="card-metric" x="40" y="205" fill="#58a6ff">95% detection accuracy</text>
+    <circle cx="374" cy="68" r="3" fill="#58a6ff" filter="url(#glow-blue)"/>
+  </g>
+
+  <!-- ═══ CARD 2: Blockchain (Top Right) ═══ -->
+  <g class="card-2">
+    <rect fill="url(#card-bc)" x="450" y="30" width="380" height="200" rx="12" filter="url(#card-shadow)"/>
+    <rect class="border-bc" fill="none" stroke="#bc8cff" stroke-width="1.5" x="450" y="30" width="380" height="200" rx="12"/>
+    <rect fill="#bc8cff" x="450" y="30" width="380" height="3" rx="12" opacity="0.6"/>
+
+    <g class="icon-float-2">
+      <circle cx="486" cy="68" r="16" fill="#bc8cff" opacity="0.15"/>
+      <text x="478" y="74" font-size="20">⛓️</text>
+    </g>
+
+    <text class="card-subtitle" x="512" y="60" fill="#bc8cff">BLOCKCHAIN &amp; DECENTRALIZED</text>
+    <text class="card-title" x="512" y="80">DID &amp; Payment Gateways</text>
+
+    <text class="card-desc" x="470" y="108">Architecting blockchain payment gateways and</text>
+    <text class="card-desc" x="470" y="124">DID certification systems for secure credential</text>
+    <text class="card-desc" x="470" y="140">management across institutions. Enterprise-grade,</text>
+    <text class="card-desc" x="470" y="156">cross-border, multi-language systems.</text>
+
+    <text class="card-tech" x="470" y="180">Blockchain · DID · Multi-language · Enterprise APIs</text>
+
+    <text class="card-metric" x="470" y="205" fill="#bc8cff">4,500+ companies served</text>
+    <circle cx="804" cy="68" r="3" fill="#bc8cff" filter="url(#glow-purple)"/>
+  </g>
+
+  <!-- ═══ CARD 3: Cloud (Bottom Left) ═══ -->
+  <g class="card-3">
+    <rect fill="url(#card-cl)" x="20" y="290" width="380" height="200" rx="12" filter="url(#card-shadow)"/>
+    <rect class="border-cl" fill="none" stroke="#3fb950" stroke-width="1.5" x="20" y="290" width="380" height="200" rx="12"/>
+    <rect fill="#3fb950" x="20" y="290" width="380" height="3" rx="12" opacity="0.6"/>
+
+    <g class="icon-float-3">
+      <circle cx="56" cy="328" r="16" fill="#3fb950" opacity="0.15"/>
+      <text x="47" y="334" font-size="20">☁️</text>
+    </g>
+
+    <text class="card-subtitle" x="82" y="320" fill="#3fb950">CLOUD &amp; DEVOPS</text>
+    <text class="card-title" x="82" y="340">Infrastructure &amp; CI/CD</text>
+
+    <text class="card-desc" x="40" y="368">Running MicroK8s clusters with automated failover,</text>
+    <text class="card-desc" x="40" y="384">CI/CD pipelines via Jenkins + ArgoCD with GitOps,</text>
+    <text class="card-desc" x="40" y="400">and multi-cloud solutions across AWS &amp; Azure with</text>
+    <text class="card-desc" x="40" y="416">auto-scaling and containerized deployments.</text>
+
+    <text class="card-tech" x="40" y="440">AWS · Azure · K8s · Docker · Jenkins · ArgoCD · MicroK8s</text>
+
+    <text class="card-metric" x="40" y="465" fill="#3fb950">99.9% uptime · 80% faster deploys</text>
+    <circle cx="374" cy="328" r="3" fill="#3fb950" filter="url(#glow-green)"/>
+  </g>
+
+  <!-- ═══ CARD 4: Data (Bottom Right) ═══ -->
+  <g class="card-4">
+    <rect fill="url(#card-de)" x="450" y="290" width="380" height="200" rx="12" filter="url(#card-shadow)"/>
+    <rect class="border-de" fill="none" stroke="#f0883e" stroke-width="1.5" x="450" y="290" width="380" height="200" rx="12"/>
+    <rect fill="#f0883e" x="450" y="290" width="380" height="3" rx="12" opacity="0.6"/>
+
+    <g class="icon-float-4">
+      <circle cx="486" cy="328" r="16" fill="#f0883e" opacity="0.15"/>
+      <text x="478" y="334" font-size="20">📊</text>
+    </g>
+
+    <text class="card-subtitle" x="512" y="320" fill="#f0883e">DATA ENGINEERING</text>
+    <text class="card-title" x="512" y="340">Pipelines &amp; Analytics</text>
+
+    <text class="card-desc" x="470" y="368">Enterprise data pipelines processing 1M+ daily</text>
+    <text class="card-desc" x="470" y="384">transactions with Apache Airflow, optimized</text>
+    <text class="card-desc" x="470" y="400">PostgreSQL for blazing retrieval, and Redis caching</text>
+    <text class="card-desc" x="470" y="416">for sub-second financial system responses.</text>
+
+    <text class="card-tech" x="470" y="440">PostgreSQL · Redis · MongoDB · Airflow · ETL · Tableau</text>
+
+    <text class="card-metric" x="470" y="465" fill="#f0883e">1M+ txns/day · 70% faster queries</text>
+    <circle cx="804" cy="328" r="3" fill="#f0883e" filter="url(#glow-orange)"/>
+  </g>
+</svg>

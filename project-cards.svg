@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620">
+  <defs>
+    <radialGradient id="cardBg" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" stop-color="#0f1729"/>
+      <stop offset="100%" stop-color="#060a13"/>
+    </radialGradient>
+    <linearGradient id="card1Border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f6feb"/>
+      <stop offset="100%" stop-color="#58a6ff"/>
+    </linearGradient>
+    <linearGradient id="card2Border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3fb950"/>
+      <stop offset="100%" stop-color="#7ee787"/>
+    </linearGradient>
+    <linearGradient id="card3Border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d29922"/>
+      <stop offset="100%" stop-color="#ffa657"/>
+    </linearGradient>
+    <linearGradient id="flowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="cardGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <style>
+      @keyframes fadeIn1 { 0%{opacity:0;transform:translateY(20px)}100%{opacity:1;transform:translateY(0)} }
+      @keyframes fadeIn2 { 0%{opacity:0;transform:translateY(20px)}100%{opacity:1;transform:translateY(0)} }
+      @keyframes fadeIn3 { 0%{opacity:0;transform:translateY(20px)}100%{opacity:1;transform:translateY(0)} }
+      @keyframes dataFlow {
+        0% { stroke-dashoffset: 20; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes nodePulse {
+        0%,100% { r: 4; opacity: 0.8; }
+        50% { r: 5.5; opacity: 1; }
+      }
+      .card1 { animation: fadeIn1 0.6s ease-out 0.2s both; }
+      .card2 { animation: fadeIn2 0.6s ease-out 0.5s both; }
+      .card3 { animation: fadeIn3 0.6s ease-out 0.8s both; }
+      .data-flow { stroke-dasharray: 4 4; animation: dataFlow 1s linear infinite; }
+      .node-pulse { animation: nodePulse 2s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- === CARD 1: netlearning.co.jp === -->
+  <g class="card1" filter="url(#softShadow)">
+    <rect x="20" y="10" width="860" height="180" rx="8" fill="#0d1117" stroke="url(#card1Border)" stroke-width="1"/>
+    
+    <!-- Status indicator -->
+    <circle cx="42" cy="32" r="4" fill="#3fb950"/>
+    <text x="54" y="36" fill="#3fb950" font-family="'SF Mono','Fira Code',monospace" font-size="10">PRODUCTION</text>
+    
+    <!-- Title -->
+    <text x="42" y="60" fill="#58a6ff" font-family="'SF Mono','Fira Code',monospace" font-size="16" font-weight="bold">netlearning.co.jp</text>
+    <text x="250" y="60" fill="#8b949e" font-family="'SF Mono','Fira Code',monospace" font-size="12">Enterprise Blockchain Payment Gateway</text>
+    
+    <!-- Stats row -->
+    <text x="42" y="82" fill="#c9d1d9" font-family="'SF Mono','Fira Code',monospace" font-size="11">
+      <tspan fill="#ffa657">4,500+</tspan> companies  ·  <tspan fill="#ffa657">3</tspan> countries (JP/CN/KR)  ·  <tspan fill="#ffa657">99.9%</tspan> uptime  ·  <tspan fill="#ffa657">80%</tspan> faster deploys
+    </text>
+    
+    <!-- Mini architecture diagram -->
+    <g transform="translate(42, 100)">
+      <!-- Client -->
+      <rect x="0" y="5" width="70" height="28" rx="4" fill="#161b22" stroke="#484f58" stroke-width="0.5"/>
+      <text x="35" y="23" text-anchor="middle" fill="#c9d1d9" font-family="'SF Mono','Fira Code',monospace" font-size="8">Client</text>
+      
+      <!-- Arrow -->
+      <line x1="75" y1="19" x2="110" y2="19" class="data-flow" stroke="#58a6ff" stroke-width="1"/>
+      
+      <!-- API Gateway -->
+      <rect x="115" y="5" width="80" height="28" rx="4" fill="#161b22" stroke="#1f6feb" stroke-width="0.8"/>
+      <text x="155" y="23" text-anchor="middle" fill="#58a6ff" font-family="'SF Mono','Fira Code',monospace" font-size="8">API Gateway</text>
+      
+      <!-- Arrow -->
+      <line x1="200" y1="19" x2="235" y2="19" class="data-flow" stroke="#58a6ff" stroke-width="1"/>
+      
+      <!-- Microservices -->
+      <rect x="240" y="0" width="110" height="15" rx="3" fill="#161b22" stroke="#3fb950" stroke-width="0.5"/>
+      <text x="295" y="11" text-anchor="middle" fill="#7ee787" font-family="'SF Mono','Fira Code',monospace" font-size="7">Payment Service</text>
+      <rect x="240" y="20" width="110" height="15" rx="3" fill="#161b22" stroke="#3fb950" stroke-width="0.5"/>
+      <text x="295" y="31" text-anchor="middle" fill="#7ee787" font-family="'SF Mono','Fira Code',monospace" font-size="7">Auth Service</text>
+      <rect x="240" y="40" width="110" height="15" rx="3" fill="#161b22" stroke="#3fb950" stroke-width="0.5"/>
+      <text x="295" y="51" text-anchor="middle" fill="#7ee787" font-family="'SF Mono','Fira Code',monospace" font-size="7">Blockchain Bridge</text>
+      
+      <!-- Arrow -->
+      <line x1="355" y1="27" x2="390" y2="27" class="data-flow" stroke="#58a6ff" stroke-width="1"/>
+      
+      <!-- K8s -->
+      <rect x="395" y="5" width="90" height="28" rx="4" fill="#161b22" stroke="#d29922" stroke-width="0.8"/>
+      <text x="440" y="17" text-anchor="middle" fill="#ffa657" font-family="'SF Mono','Fira Code',monospace" font-size="7">MicroK8s HA</text>
+      <text x="440" y="28" text-anchor="middle" fill="#8b949e" font-family="'SF Mono','Fira Code',monospace" font-size="7">3-node cluster</text>
+      
+      <!-- Arrow -->
+      <line x1="490" y1="19" x2="525" y2="19" class="data-flow" stroke="#58a6ff" stroke-width="1"/>
+      
+      <!-- DB -->
+      <rect x="530" y="5" width="80" height="28" rx="4" fill="#161b22" stroke="#f85149" stroke-width="0.8"/>
+      <text x="570" y="23" text-anchor="middle" fill="#ff7b72" font-family="'SF Mono','Fira Code',monospace" font-size="8">PostgreSQL</text>
+
+      <!-- Node dots -->
+      <circle cx="75" cy="19" r="3" fill="#58a6ff" class="node-pulse"/>
+      <circle cx="115" cy="19" r="3" fill="#58a6ff" class="node-pulse" style="animation-delay:0.3s"/>
+      <circle cx="240" cy="19" r="3" fill="#3fb950" class="node-pulse" style="animation-delay:0.6s"/>
+      <circle cx="395" cy="19" r="3" fill="#d29922" class="node-pulse" style="animation-delay:0.9s"/>
+      <circle cx="530" cy="19" r="3" fill="#f85149" class="node-pulse" style="animation-delay:1.2s"/>
+    </g>
+    
+    <!-- Tech tags -->
+    <g transform="translate(660, 100)">
+      <rect x="0" y="0" width="50" height="18" rx="3" fill="#1f3d5e" opacity="0.6"/>
+      <text x="25" y="13" text-anchor="middle" fill="#58a6ff" font-family="'SF Mono','Fira Code',monospace" font-size="8">Django</text>
+      <rect x="55" y="0" width="35" height="18" rx="3" fill="#1f3d5e" opacity="0.6"/>
+      <text x="72" y="13" text-anchor="middle" fill="#58a6ff" font-family="'SF Mono','Fira Code',monospace" font-size="8">K8s</text>
+      <rect x="95" y="0" width="60" height="18" rx="3" fill="#1f3d5e" opacity="0.6"/>
+      <text x="125" y="13" text-anchor="middle" fill="#58a6ff" font-family="'SF Mono','Fira Code',monospace" font-size="8">Jenkins</text>
+      <rect x="0" y="24" width="55" height="18" rx="3" fill="#1f3d5e" opacity="0.6"/>
+      <text x="27" y="37" text-anchor="middle" fill="#58a6ff" font-family="'SF Mono','Fira Code',monospace" font-size="8">ArgoCD</text>
+      <rect x="60" y="24" width="70" height="18" rx="3" fill="#1f3d5e" opacity="0.6"/>
+      <text x="95" y="37" text-anchor="middle" fill="#58a6ff" font-family="'SF Mono','Fira Code',monospace" font-size="8">PostgreSQL</text>
+    </g>
+  </g>
+
+  <!-- === CARD 2: checkme.one === -->
+  <g class="card2" filter="url(#softShadow)">
+    <rect x="20" y="210" width="860" height="180" rx="8" fill="#0d1117" stroke="url(#card2Border)" stroke-width="1"/>
+    
+    <circle cx="42" cy="232" r="4" fill="#3fb950"/>
+    <text x="54" y="236" fill="#3fb950" font-family="'SF Mono','Fira Code',monospace" font-size="10">PRODUCTION</text>
+    
+    <text x="42" y="260" fill="#7ee787" font-family="'SF Mono','Fira Code',monospace" font-size="16" font-weight="bold">checkme.one</text>
+    <text x="195" y="260" fill="#8b949e" font-family="'SF Mono','Fira Code',monospace" font-size="12">AI-Powered English Fluency Platform</text>
+    
+    <text x="42" y="282" fill="#c9d1d9" font-family="'SF Mono','Fira Code',monospace" font-size="11">
+      Real-time speech analysis  ·  AI-driven feedback  ·  DID blockchain certification
+    </text>
+    
+    <!-- Mini architecture -->
+    <g transform="translate(42, 300)">
+      <rect x="0" y="5" width="70" height="28" rx="4" fill="#161b22" stroke="#484f58" stroke-width="0.5"/>
+      <text x="35" y="17" text-anchor="middle" fill="#c9d1d9" font-family="'SF Mono','Fira Code',monospace" font-size="7">User Speech</text>
+      <text x="35" y="28" text-anchor="middle" fill="#8b949e" font-family="'SF Mono','Fira Code',monospace" font-size="7">Audio Input</text>
+      
+      <line x1="75" y1="19" x2="110" y2="19" class="data-flow" stroke="#3fb950" stroke-width="1"/>
+      
+      <rect x="115" y="5" width="90" height="28" rx="4" fill="#161b22" stroke="#3fb950" stroke-width="0.8"/>
+      <text x="160" y="17" text-anchor="middle" fill="#7ee787" font-family="'SF Mono','Fira Code',monospace" font-size="7">Speech Analysis</text>
+      <text x="160" y="28" text-anchor="middle" fill="#8b949e" font-family="'SF Mono','Fira Code',monospace" font-size="7">AI Engine</text>
+      
+      <line x1="210" y1="19" x2="245" y2="19" class="data-flow" stroke="#3fb950" stroke-width="1"/>
+      
+      <rect x="250" y="5" width="90" height="28" rx="4" fill="#161b22" stroke="#3fb950" stroke-width="0.8"/>
+      <text x="295" y="17" text-anchor="middle" fill="#7ee787" font-family="'SF Mono','Fira Code',monospace" font-size="7">Django Backend</text>
+      <text x="295" y="28" text-anchor="middle" fill="#8b949e" font-family="'SF Mono','Fira Code',monospace" font-size="7">REST API</text>
+      
+      <line x1="345" y1="19" x2="380" y2="19" class="data-flow" stroke="#3fb950" stroke-width="1"/>
+      
+      <rect x="385" y="0" width="100" height="15" rx="3" fill="#161b22" stroke="#d2a8ff" stroke-width="0.5"/>
+      <text x="435" y="11" text-anchor="middle" fill="#d2a8ff" font-family="'SF Mono','Fira Code',monospace" font-size="7">Feedback Engine</text>
+      <rect x="385" y="20" width="100" height="15" rx="3" fill="#161b22" stroke="#d2a8ff" stroke-width="0.5"/>
+      <text x="435" y="31" text-anchor="middle" fill="#d2a8ff" font-family="'SF Mono','Fira Code',monospace" font-size="7">Progress Tracker</text>
+      <rect x="385" y="40" width="100" height="15" rx="3" fill="#161b22" stroke="#d2a8ff" stroke-width="0.5"/>
+      <text x="435" y="51" text-anchor="middle" fill="#d2a8ff" font-family="'SF Mono','Fira Code',monospace" font-size="7">DID Certification</text>
+
+      <!-- Node dots -->
+      <circle cx="75" cy="19" r="3" fill="#3fb950" class="node-pulse"/>
+      <circle cx="115" cy="19" r="3" fill="#3fb950" class="node-pulse" style="animation-delay:0.3s"/>
+      <circle cx="250" cy="19" r="3" fill="#3fb950" class="node-pulse" style="animation-delay:0.6s"/>
+      <circle cx="385" cy="19" r="3" fill="#d2a8ff" class="node-pulse" style="animation-delay:0.9s"/>
+    </g>
+    
+    <!-- Tech tags -->
+    <g transform="translate(660, 300)">
+      <rect x="0" y="0" width="55" height="18" rx="3" fill="#1a3a2a" opacity="0.6"/>
+      <text x="27" y="13" text-anchor="middle" fill="#7ee787" font-family="'SF Mono','Fira Code',monospace" font-size="8">Python</text>
+      <rect x="60" y="0" width="50" height="18" rx="3" fill="#1a3a2a" opacity="0.6"/>
+      <text x="85" y="13" text-anchor="middle" fill="#7ee787" font-family="'SF Mono','Fira Code',monospace" font-size="8">Django</text>
+      <rect x="115" y="0" width="30" height="18" rx="3" fill="#1a3a2a" opacity="0.6"/>
+      <text x="130" y="13" text-anchor="middle" fill="#7ee787" font-family="'SF Mono','Fira Code',monospace" font-size="8">AI</text>
+      <rect x="0" y="24" width="75" height="18" rx="3" fill="#1a3a2a" opacity="0.6"/>
+      <text x="37" y="37" text-anchor="middle" fill="#7ee787" font-family="'SF Mono','Fira Code',monospace" font-size="8">Blockchain</text>
+      <rect x="80" y="24" width="40" height="18" rx="3" fill="#1a3a2a" opacity="0.6"/>
+      <text x="100" y="37" text-anchor="middle" fill="#7ee787" font-family="'SF Mono','Fira Code',monospace" font-size="8">AWS</text>
+    </g>
+  </g>
+
+  <!-- === CARD 3: Visual Script Builder === -->
+  <g class="card3" filter="url(#softShadow)">
+    <rect x="20" y="410" width="860" height="180" rx="8" fill="#0d1117" stroke="url(#card3Border)" stroke-width="1"/>
+    
+    <circle cx="42" cy="432" r="4" fill="#d29922"/>
+    <text x="54" y="436" fill="#d29922" font-family="'SF Mono','Fira Code',monospace" font-size="10">SHIPPED</text>
+    
+    <text x="42" y="460" fill="#ffa657" font-family="'SF Mono','Fira Code',monospace" font-size="16" font-weight="bold">Visual Script Language Builder</text>
+    <text x="370" y="460" fill="#8b949e" font-family="'SF Mono','Fira Code',monospace" font-size="12">No-Code Automation Platform @ NestGO</text>
+    
+    <text x="42" y="482" fill="#c9d1d9" font-family="'SF Mono','Fira Code',monospace" font-size="11">
+      <tspan fill="#ffa657">60%</tspan> user growth  ·  <tspan fill="#ffa657">40%</tspan> faster processing  ·  <tspan fill="#ffa657">95%</tspan> test coverage  ·  Real-time collab
+    </text>
+    
+    <!-- Mini architecture -->
+    <g transform="translate(42, 500)">
+      <rect x="0" y="5" width="85" height="28" rx="4" fill="#161b22" stroke="#484f58" stroke-width="0.5"/>
+      <text x="42" y="17" text-anchor="middle" fill="#c9d1d9" font-family="'SF Mono','Fira Code',monospace" font-size="7">React Frontend</text>
+      <text x="42" y="28" text-anchor="middle" fill="#8b949e" font-family="'SF Mono','Fira Code',monospace" font-size="7">Drag &amp; Drop</text>
+      
+      <line x1="90" y1="19" x2="125" y2="19" class="data-flow" stroke="#ffa657" stroke-width="1"/>
+      
+      <rect x="130" y="5" width="80" height="28" rx="4" fill="#161b22" stroke="#d29922" stroke-width="0.8"/>
+      <text x="170" y="17" text-anchor="middle" fill="#ffa657" font-family="'SF Mono','Fira Code',monospace" font-size="7">Socket.IO</text>
+      <text x="170" y="28" text-anchor="middle" fill="#8b949e" font-family="'SF Mono','Fira Code',monospace" font-size="7">Real-time</text>
+      
+      <line x1="215" y1="19" x2="250" y2="19" class="data-flow" stroke="#ffa657" stroke-width="1"/>
+      
+      <rect x="255" y="5" width="80" height="28" rx="4" fill="#161b22" stroke="#d29922" stroke-width="0.8"/>
+      <text x="295" y="17" text-anchor="middle" fill="#ffa657" font-family="'SF Mono','Fira Code',monospace" font-size="7">Node.js API</text>
+      <text x="295" y="28" text-anchor="middle" fill="#8b949e" font-family="'SF Mono','Fira Code',monospace" font-size="7">Express</text>
+      
+      <line x1="340" y1="19" x2="375" y2="19" class="data-flow" stroke="#ffa657" stroke-width="1"/>
+      
+      <rect x="380" y="0" width="100" height="15" rx="3" fill="#161b22" stroke="#f97583" stroke-width="0.5"/>
+      <text x="430" y="11" text-anchor="middle" fill="#f97583" font-family="'SF Mono','Fira Code',monospace" font-size="7">Redis Task Queue</text>
+      <rect x="380" y="20" width="100" height="15" rx="3" fill="#161b22" stroke="#f97583" stroke-width="0.5"/>
+      <text x="430" y="31" text-anchor="middle" fill="#f97583" font-family="'SF Mono','Fira Code',monospace" font-size="7">Topo Sort Engine</text>
+      <rect x="380" y="40" width="100" height="15" rx="3" fill="#161b22" stroke="#f97583" stroke-width="0.5"/>
+      <text x="430" y="51" text-anchor="middle" fill="#f97583" font-family="'SF Mono','Fira Code',monospace" font-size="7">Electron Desktop</text>
+      
+      <!-- Node dots -->
+      <circle cx="90" cy="19" r="3" fill="#ffa657" class="node-pulse"/>
+      <circle cx="130" cy="19" r="3" fill="#ffa657" class="node-pulse" style="animation-delay:0.3s"/>
+      <circle cx="255" cy="19" r="3" fill="#ffa657" class="node-pulse" style="animation-delay:0.6s"/>
+      <circle cx="380" cy="19" r="3" fill="#f97583" class="node-pulse" style="animation-delay:0.9s"/>
+    </g>
+    
+    <!-- Tech tags -->
+    <g transform="translate(660, 500)">
+      <rect x="0" y="0" width="45" height="18" rx="3" fill="#3a2a1a" opacity="0.6"/>
+      <text x="22" y="13" text-anchor="middle" fill="#ffa657" font-family="'SF Mono','Fira Code',monospace" font-size="8">React</text>
+      <rect x="50" y="0" width="55" height="18" rx="3" fill="#3a2a1a" opacity="0.6"/>
+      <text x="77" y="13" text-anchor="middle" fill="#ffa657" font-family="'SF Mono','Fira Code',monospace" font-size="8">Node.js</text>
+      <rect x="110" y="0" width="45" height="18" rx="3" fill="#3a2a1a" opacity="0.6"/>
+      <text x="132" y="13" text-anchor="middle" fill="#ffa657" font-family="'SF Mono','Fira Code',monospace" font-size="8">Redis</text>
+      <rect x="0" y="24" width="60" height="18" rx="3" fill="#3a2a1a" opacity="0.6"/>
+      <text x="30" y="37" text-anchor="middle" fill="#ffa657" font-family="'SF Mono','Fira Code',monospace" font-size="8">Electron</text>
+      <rect x="65" y="24" width="60" height="18" rx="3" fill="#3a2a1a" opacity="0.6"/>
+      <text x="95" y="37" text-anchor="middle" fill="#ffa657" font-family="'SF Mono','Fira Code',monospace" font-size="8">Socket.IO</text>
+    </g>
+  </g>
+</svg>

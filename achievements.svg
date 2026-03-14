@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="380" viewBox="0 0 850 380">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&amp;display=swap');
+
+    .bg { fill: #0d1117; }
+    .border { fill: none; stroke: #1f6feb; stroke-width: 1.5; rx: 12; }
+    .title-bar { fill: #161b22; }
+    .btn-red { fill: #ff5f57; }
+    .btn-yellow { fill: #febc2e; }
+    .btn-green { fill: #28c840; }
+    .title-text { fill: #8b949e; font-family: 'Fira Code', monospace; font-size: 12px; }
+    .heading { fill: #58a6ff; font-family: 'Fira Code', monospace; font-size: 13px; font-weight: 700; }
+    .divider { stroke: #21262d; stroke-width: 1; }
+
+    .tier-legendary { fill: #ffd700; font-family: 'Fira Code', monospace; font-size: 11px; font-weight: 700; }
+    .tier-epic { fill: #bc8cff; font-family: 'Fira Code', monospace; font-size: 11px; font-weight: 700; }
+    .tier-rare { fill: #58a6ff; font-family: 'Fira Code', monospace; font-size: 11px; font-weight: 700; }
+    .tier-common { fill: #3fb950; font-family: 'Fira Code', monospace; font-size: 11px; font-weight: 700; }
+
+    .achievement-name { fill: #c9d1d9; font-family: 'Fira Code', monospace; font-size: 11px; font-weight: 600; }
+    .achievement-desc { fill: #8b949e; font-family: 'Fira Code', monospace; font-size: 10px; }
+
+    .badge-legendary { fill: #ffd700; opacity: 0.15; }
+    .badge-epic { fill: #bc8cff; opacity: 0.15; }
+    .badge-rare { fill: #58a6ff; opacity: 0.15; }
+    .badge-common { fill: #3fb950; opacity: 0.15; }
+
+    .badge-border-legendary { fill: none; stroke: #ffd700; stroke-width: 1; opacity: 0.4; }
+    .badge-border-epic { fill: none; stroke: #bc8cff; stroke-width: 1; opacity: 0.4; }
+    .badge-border-rare { fill: none; stroke: #58a6ff; stroke-width: 1; opacity: 0.4; }
+    .badge-border-common { fill: none; stroke: #3fb950; stroke-width: 1; opacity: 0.4; }
+
+    @keyframes achievementPop {
+      0% { opacity: 0; transform: translateX(-10px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    .ach-1 { animation: achievementPop 0.4s ease-out 0.2s both; }
+    .ach-2 { animation: achievementPop 0.4s ease-out 0.35s both; }
+    .ach-3 { animation: achievementPop 0.4s ease-out 0.5s both; }
+    .ach-4 { animation: achievementPop 0.4s ease-out 0.65s both; }
+    .ach-5 { animation: achievementPop 0.4s ease-out 0.8s both; }
+    .ach-6 { animation: achievementPop 0.4s ease-out 0.95s both; }
+    .ach-7 { animation: achievementPop 0.4s ease-out 1.1s both; }
+    .ach-8 { animation: achievementPop 0.4s ease-out 1.25s both; }
+  </style>
+
+  <!-- Background -->
+  <rect class="bg" width="850" height="380" rx="12"/>
+  <rect class="border" x="1" y="1" width="848" height="378"/>
+
+  <!-- Title Bar -->
+  <rect class="title-bar" x="1" y="1" width="848" height="36" rx="12"/>
+  <rect class="title-bar" x="1" y="25" width="848" height="12"/>
+  <circle class="btn-red" cx="22" cy="19" r="6"/>
+  <circle class="btn-yellow" cx="42" cy="19" r="6"/>
+  <circle class="btn-green" cx="62" cy="19" r="6"/>
+  <text class="title-text" x="425" y="23" text-anchor="middle">sifat@intelligent-machines ~ achievements.log</text>
+
+  <!-- LEFT COLUMN -->
+  <!-- Legendary -->
+  <text class="tier-legendary" x="30" y="62">★ LEGENDARY</text>
+  <line class="divider" x1="30" y1="70" x2="410" y2="70"/>
+
+  <g class="ach-1">
+    <rect class="badge-legendary" x="30" y="80" width="380" height="38" rx="6"/>
+    <rect class="badge-border-legendary" x="30" y="80" width="380" height="38" rx="6"/>
+    <text class="achievement-name" x="45" y="98">🌏 Served 4,500+ Companies</text>
+    <text class="achievement-desc" x="45" y="112">Blockchain gateway across Japan, China &amp; Korea</text>
+  </g>
+
+  <g class="ach-2">
+    <rect class="badge-legendary" x="30" y="124" width="380" height="38" rx="6"/>
+    <rect class="badge-border-legendary" x="30" y="124" width="380" height="38" rx="6"/>
+    <text class="achievement-name" x="45" y="142">💰 1M+ Daily Transactions</text>
+    <text class="achievement-desc" x="45" y="156">Enterprise data pipeline with automated ETL</text>
+  </g>
+
+  <!-- Epic -->
+  <text class="tier-epic" x="30" y="186">◆ EPIC</text>
+  <line class="divider" x1="30" y1="194" x2="410" y2="194"/>
+
+  <g class="ach-3">
+    <rect class="badge-epic" x="30" y="202" width="380" height="38" rx="6"/>
+    <rect class="badge-border-epic" x="30" y="202" width="380" height="38" rx="6"/>
+    <text class="achievement-name" x="45" y="220">🛡 99.9% Cluster Uptime</text>
+    <text class="achievement-desc" x="45" y="234">MicroK8s 3-node HA with automated failover</text>
+  </g>
+
+  <g class="ach-4">
+    <rect class="badge-epic" x="30" y="246" width="380" height="38" rx="6"/>
+    <rect class="badge-border-epic" x="30" y="246" width="380" height="38" rx="6"/>
+    <text class="achievement-name" x="45" y="264">🚀 80% Faster Deployments</text>
+    <text class="achievement-desc" x="45" y="278">Jenkins + ArgoCD GitOps CI/CD pipeline</text>
+  </g>
+
+  <!-- RIGHT COLUMN -->
+  <!-- Rare -->
+  <text class="tier-rare" x="440" y="62">● RARE</text>
+  <line class="divider" x1="440" y1="70" x2="820" y2="70"/>
+
+  <g class="ach-5">
+    <rect class="badge-rare" x="440" y="80" width="380" height="38" rx="6"/>
+    <rect class="badge-border-rare" x="440" y="80" width="380" height="38" rx="6"/>
+    <text class="achievement-name" x="455" y="98">📊 70% Faster Queries</text>
+    <text class="achievement-desc" x="455" y="112">PostgreSQL indexing &amp; partitioning mastery</text>
+  </g>
+
+  <g class="ach-6">
+    <rect class="badge-rare" x="440" y="124" width="380" height="38" rx="6"/>
+    <rect class="badge-border-rare" x="440" y="124" width="380" height="38" rx="6"/>
+    <text class="achievement-name" x="455" y="142">🎯 95% CV Detection Accuracy</text>
+    <text class="achievement-desc" x="455" y="156">YOLOv5 retail analytics system</text>
+  </g>
+
+  <g class="ach-7">
+    <rect class="badge-rare" x="440" y="168" width="380" height="38" rx="6"/>
+    <rect class="badge-border-rare" x="440" y="168" width="380" height="38" rx="6"/>
+    <text class="achievement-name" x="455" y="186">🧪 95% Test Coverage</text>
+    <text class="achievement-desc" x="455" y="200">Jest + Cypress comprehensive testing</text>
+  </g>
+
+  <!-- Common -->
+  <text class="tier-common" x="440" y="230">▪ EFFICIENCY</text>
+  <line class="divider" x1="440" y1="238" x2="820" y2="238"/>
+
+  <g class="ach-8">
+    <rect class="badge-common" x="440" y="246" width="380" height="38" rx="6"/>
+    <rect class="badge-border-common" x="440" y="246" width="380" height="38" rx="6"/>
+    <text class="achievement-name" x="455" y="264">📈 60% User Base Growth</text>
+    <text class="achievement-desc" x="455" y="278">Visual script language builder adoption</text>
+  </g>
+
+  <!-- Epic continued -->
+  <g class="ach-4">
+    <rect class="badge-epic" x="30" y="290" width="380" height="38" rx="6"/>
+    <rect class="badge-border-epic" x="30" y="290" width="380" height="38" rx="6"/>
+    <text class="achievement-name" x="45" y="308">📋 90% Less Manual Reporting</text>
+    <text class="achievement-desc" x="45" y="322">Automated report generation pipeline</text>
+  </g>
+
+  <g class="ach-8">
+    <rect class="badge-common" x="440" y="290" width="380" height="38" rx="6"/>
+    <rect class="badge-border-common" x="440" y="290" width="380" height="38" rx="6"/>
+    <text class="achievement-name" x="455" y="308">⏱ Sub-second Response Times</text>
+    <text class="achievement-desc" x="455" y="322">Redis caching on concurrent financial txns</text>
+  </g>
+
+  <!-- Total -->
+  <text class="achievement-desc" x="425" y="362" text-anchor="middle">🎮 10/10 achievements unlocked · All metrics from production systems</text>
+</svg>

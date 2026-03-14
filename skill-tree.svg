@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="440" viewBox="0 0 850 440">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&amp;display=swap');
+
+    .bg { fill: #0d1117; }
+    .border { fill: none; stroke: #1f6feb; stroke-width: 1.5; rx: 12; }
+    .title-bar { fill: #161b22; }
+    .btn-red { fill: #ff5f57; }
+    .btn-yellow { fill: #febc2e; }
+    .btn-green { fill: #28c840; }
+    .title-text { fill: #8b949e; font-family: 'Fira Code', monospace; font-size: 12px; }
+
+    .node-main { fill: #1f6feb; rx: 8; }
+    .node-branch { rx: 8; }
+    .node-backend { fill: #3fb950; }
+    .node-cloud { fill: #58a6ff; }
+    .node-ai { fill: #bc8cff; }
+    .node-data { fill: #f0883e; }
+    .node-blockchain { fill: #f778ba; }
+    .node-frontend { fill: #ffa657; }
+
+    .node-label { fill: #ffffff; font-family: 'Fira Code', monospace; font-size: 11px; font-weight: 700; text-anchor: middle; }
+    .node-label-main { fill: #ffffff; font-family: 'Fira Code', monospace; font-size: 13px; font-weight: 700; text-anchor: middle; }
+    .tech-text { fill: #8b949e; font-family: 'Fira Code', monospace; font-size: 10px; text-anchor: middle; }
+    .tech-text-highlight { fill: #c9d1d9; font-family: 'Fira Code', monospace; font-size: 10px; text-anchor: middle; }
+
+    .connector { stroke: #30363d; stroke-width: 2; fill: none; }
+    .connector-glow { stroke: #1f6feb; stroke-width: 2; fill: none; opacity: 0.4; }
+
+    @keyframes pulseNode {
+      0%, 100% { filter: brightness(1); }
+      50% { filter: brightness(1.3); }
+    }
+
+    @keyframes drawLine {
+      from { stroke-dashoffset: 200; }
+      to { stroke-dashoffset: 0; }
+    }
+
+    @keyframes nodeReveal {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .connector { stroke-dasharray: 200; animation: drawLine 1.5s ease-out 0.3s both; }
+    .node-g-1 { animation: nodeReveal 0.5s ease-out 0.5s both; }
+    .node-g-2 { animation: nodeReveal 0.5s ease-out 0.8s both; }
+    .node-g-3 { animation: nodeReveal 0.5s ease-out 1.0s both; }
+    .node-g-4 { animation: nodeReveal 0.5s ease-out 1.2s both; }
+    .node-g-5 { animation: nodeReveal 0.5s ease-out 1.4s both; }
+    .node-g-6 { animation: nodeReveal 0.5s ease-out 1.6s both; }
+    .node-g-7 { animation: nodeReveal 0.5s ease-out 1.8s both; }
+
+    .node-main { animation: pulseNode 3s ease-in-out infinite; }
+  </style>
+
+  <!-- Background -->
+  <rect class="bg" width="850" height="440" rx="12"/>
+  <rect class="border" x="1" y="1" width="848" height="438"/>
+
+  <!-- Title Bar -->
+  <rect class="title-bar" x="1" y="1" width="848" height="36" rx="12"/>
+  <rect class="title-bar" x="1" y="25" width="848" height="12"/>
+  <circle class="btn-red" cx="22" cy="19" r="6"/>
+  <circle class="btn-yellow" cx="42" cy="19" r="6"/>
+  <circle class="btn-green" cx="62" cy="19" r="6"/>
+  <text class="title-text" x="425" y="23" text-anchor="middle">sifat@intelligent-machines ~ skill_tree.sh</text>
+
+  <!-- Connectors (drawn first, behind nodes) -->
+  <!-- Main to Row 1 -->
+  <line class="connector" x1="425" y1="105" x2="142" y2="170"/>
+  <line class="connector" x1="425" y1="105" x2="425" y2="170"/>
+  <line class="connector" x1="425" y1="105" x2="708" y2="170"/>
+
+  <!-- Row 1 to Row 2 -->
+  <line class="connector" x1="142" y1="210" x2="142" y2="290"/>
+  <line class="connector" x1="425" y1="210" x2="425" y2="290"/>
+  <line class="connector" x1="708" y1="210" x2="708" y2="290"/>
+
+  <!-- MAIN NODE — Polyglot Programmer -->
+  <g class="node-g-1">
+    <rect class="node-main" x="325" y="62" width="200" height="43" rx="8"/>
+    <text class="node-label-main" x="425" y="88">🧙 POLYGLOT PROGRAMMER</text>
+  </g>
+
+  <!-- ROW 1 — Primary Branches -->
+  <!-- Backend Mastery -->
+  <g class="node-g-2">
+    <rect class="node-branch node-backend" x="42" y="170" width="200" height="40" rx="8"/>
+    <text class="node-label" x="142" y="195">🗡 BACKEND MASTERY</text>
+    <text class="tech-text-highlight" x="142" y="230">Python · Django · Flask</text>
+    <text class="tech-text" x="142" y="244">Java · Spring Boot</text>
+    <text class="tech-text" x="142" y="258">TypeScript · NestJS · Node</text>
+  </g>
+
+  <!-- Cloud Dominion -->
+  <g class="node-g-3">
+    <rect class="node-branch node-cloud" x="325" y="170" width="200" height="40" rx="8"/>
+    <text class="node-label" x="425" y="195">☁ CLOUD DOMINION</text>
+    <text class="tech-text-highlight" x="425" y="230">AWS · Azure · Kubernetes</text>
+    <text class="tech-text" x="425" y="244">Docker · Jenkins · ArgoCD</text>
+    <text class="tech-text" x="425" y="258">MicroK8s · CI/CD · GitOps</text>
+  </g>
+
+  <!-- AI/ML Arcana -->
+  <g class="node-g-4">
+    <rect class="node-branch node-ai" x="608" y="170" width="200" height="40" rx="8"/>
+    <text class="node-label" x="708" y="195">🤖 AI/ML ARCANA</text>
+    <text class="tech-text-highlight" x="708" y="230">TensorFlow · YOLOv5</text>
+    <text class="tech-text" x="708" y="244">Computer Vision · OpenCV</text>
+    <text class="tech-text" x="708" y="258">Scikit-learn · Agents</text>
+  </g>
+
+  <!-- ROW 2 — Secondary Branches -->
+  <!-- Data Engineering -->
+  <g class="node-g-5">
+    <rect class="node-branch node-data" x="42" y="290" width="200" height="40" rx="8"/>
+    <text class="node-label" x="142" y="315">📊 DATA ENGINEERING</text>
+    <text class="tech-text-highlight" x="142" y="350">PostgreSQL · Redis · MongoDB</text>
+    <text class="tech-text" x="142" y="364">ETL · Airflow · MySQL</text>
+    <text class="tech-text" x="142" y="378">Data Pipelines · Tableau</text>
+  </g>
+
+  <!-- Blockchain Forge -->
+  <g class="node-g-6">
+    <rect class="node-branch node-blockchain" x="325" y="290" width="200" height="40" rx="8"/>
+    <text class="node-label" x="425" y="315">⛓ BLOCKCHAIN FORGE</text>
+    <text class="tech-text-highlight" x="425" y="350">DID Certification</text>
+    <text class="tech-text" x="425" y="364">Payment Gateways</text>
+    <text class="tech-text" x="425" y="378">Multi-language Systems</text>
+  </g>
+
+  <!-- Frontend Craft -->
+  <g class="node-g-7">
+    <rect class="node-branch node-frontend" x="608" y="290" width="200" height="40" rx="8"/>
+    <text class="node-label" x="708" y="315">🎭 FRONTEND CRAFT</text>
+    <text class="tech-text-highlight" x="708" y="350">React · Electron</text>
+    <text class="tech-text" x="708" y="364">Socket.IO · Real-time</text>
+    <text class="tech-text" x="708" y="378">Jest · Cypress · TDD</text>
+  </g>
+
+  <!-- Footer hint -->
+  <text class="tech-text" x="425" y="420">⚔ All skills battle-tested in production environments serving thousands of users</text>
+</svg>

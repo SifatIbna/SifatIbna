@@ -100,38 +100,6 @@ Real numbers from real production systems:
   <img alt="GitHub Space Shooter" src="./game.gif" width="98%"/>
 </div>
 
-<details>
-<summary>⚙️ Setup: gh-space-shooter GitHub Action</summary>
-
-Create `.github/workflows/space-shooter.yml` in your profile repo:
-
-```yaml
-name: Update Space Shooter Game
-
-on:
-  schedule:
-    - cron: '0 0 * * *'   # Daily at midnight UTC
-  workflow_dispatch:
-
-permissions:
-  contents: write
-
-jobs:
-  update-game:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: czl9707/gh-space-shooter@v2
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          output-path: 'game.gif'
-          strategy: 'random'
-```
-
-Then go to **Actions** → **Update Space Shooter Game** → **Run workflow** to generate it the first time.
-
-</details>
-
 ---
 
 ## 🏙️ Contribution Skyline

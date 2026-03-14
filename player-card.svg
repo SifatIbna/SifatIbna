@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="520" viewBox="0 0 850 520">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&amp;display=swap');
+
+    .bg { fill: #0d1117; }
+    .border { fill: none; stroke: #1f6feb; stroke-width: 1.5; rx: 12; }
+    .title-bar { fill: #161b22; }
+    .btn-red { fill: #ff5f57; }
+    .btn-yellow { fill: #febc2e; }
+    .btn-green { fill: #28c840; }
+    .title-text { fill: #8b949e; font-family: 'Fira Code', monospace; font-size: 12px; }
+    .heading { fill: #58a6ff; font-family: 'Fira Code', monospace; font-size: 14px; font-weight: 700; }
+    .label { fill: #8b949e; font-family: 'Fira Code', monospace; font-size: 12px; }
+    .value { fill: #c9d1d9; font-family: 'Fira Code', monospace; font-size: 12px; }
+    .highlight { fill: #58a6ff; font-family: 'Fira Code', monospace; font-size: 12px; font-weight: 600; }
+    .stat-bg { fill: #21262d; rx: 3; }
+    .stat-fill-int { fill: #58a6ff; rx: 3; }
+    .stat-fill-spd { fill: #3fb950; rx: 3; }
+    .stat-fill-res { fill: #f0883e; rx: 3; }
+    .stat-fill-ver { fill: #bc8cff; rx: 3; }
+    .stat-fill-scl { fill: #f778ba; rx: 3; }
+    .quest-bg { fill: #21262d; rx: 3; }
+    .quest-fill-1 { fill: #3fb950; rx: 3; }
+    .quest-fill-2 { fill: #58a6ff; rx: 3; }
+    .quest-fill-3 { fill: #f0883e; rx: 3; }
+    .quest-text { fill: #c9d1d9; font-family: 'Fira Code', monospace; font-size: 11px; }
+    .quest-pct { fill: #8b949e; font-family: 'Fira Code', monospace; font-size: 10px; }
+    .divider { stroke: #21262d; stroke-width: 1; }
+    .quote { fill: #8b949e; font-family: 'Fira Code', monospace; font-size: 11px; font-style: italic; }
+    .emoji { font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif; font-size: 13px; }
+    .blink { animation: blink 1s step-end infinite; }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    @keyframes slideIn {
+      from { width: 0; }
+    }
+
+    .stat-fill-int { animation: slideIn 1.5s ease-out 0.3s both; }
+    .stat-fill-spd { animation: slideIn 1.5s ease-out 0.5s both; }
+    .stat-fill-res { animation: slideIn 1.5s ease-out 0.7s both; }
+    .stat-fill-ver { animation: slideIn 1.5s ease-out 0.9s both; }
+    .stat-fill-scl { animation: slideIn 1.5s ease-out 1.1s both; }
+    .quest-fill-1 { animation: slideIn 1.2s ease-out 1.4s both; }
+    .quest-fill-2 { animation: slideIn 1.2s ease-out 1.6s both; }
+    .quest-fill-3 { animation: slideIn 1.2s ease-out 1.8s both; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-1 { animation: fadeIn 0.4s ease-out 0.1s both; }
+    .fade-2 { animation: fadeIn 0.4s ease-out 0.3s both; }
+    .fade-3 { animation: fadeIn 0.4s ease-out 0.5s both; }
+    .fade-4 { animation: fadeIn 0.4s ease-out 0.7s both; }
+    .fade-5 { animation: fadeIn 0.4s ease-out 0.9s both; }
+  </style>
+
+  <!-- Background -->
+  <rect class="bg" width="850" height="520" rx="12"/>
+  <rect class="border" x="1" y="1" width="848" height="518"/>
+
+  <!-- Title Bar -->
+  <rect class="title-bar" x="1" y="1" width="848" height="36" rx="12"/>
+  <rect class="title-bar" x="1" y="25" width="848" height="12"/>
+  <circle class="btn-red" cx="22" cy="19" r="6"/>
+  <circle class="btn-yellow" cx="42" cy="19" r="6"/>
+  <circle class="btn-green" cx="62" cy="19" r="6"/>
+  <text class="title-text" x="425" y="23" text-anchor="middle">sifat@intelligent-machines ~ player_profile.sh</text>
+
+  <!-- PLAYER INFO SECTION -->
+  <g class="fade-1">
+    <text class="heading" x="30" y="68">▸ PLAYER INFO</text>
+    <line class="divider" x1="30" y1="76" x2="820" y2="76"/>
+
+    <text class="label" x="30" y="100">Name</text>
+    <text class="value" x="160" y="100">Sifat Ibna Amin</text>
+
+    <text class="label" x="30" y="122">Class</text>
+    <text class="highlight" x="160" y="122">Senior Software Engineer</text>
+
+    <text class="label" x="30" y="144">Guild</text>
+    <text class="value" x="160" y="144">Intelligent Machines</text>
+
+    <text class="label" x="450" y="100">Region</text>
+    <text class="value" x="560" y="100">Dhaka, Bangladesh</text>
+
+    <text class="label" x="450" y="122">Type</text>
+    <text class="highlight" x="560" y="122">Polyglot Programmer</text>
+
+    <text class="label" x="450" y="144">XP</text>
+    <text class="value" x="560" y="144">4+ years shipping production</text>
+  </g>
+
+  <!-- STATS SECTION -->
+  <g class="fade-2">
+    <text class="heading" x="30" y="184">▸ STATS</text>
+    <line class="divider" x1="30" y1="192" x2="820" y2="192"/>
+
+    <!-- Intelligence -->
+    <text class="label" x="30" y="216">⚡ Intelligence</text>
+    <rect class="stat-bg" x="170" y="204" width="250" height="14"/>
+    <rect class="stat-fill-int" x="170" y="204" width="215" height="14"/>
+    <text class="quest-pct" x="430" y="216">4+ yrs prod systems</text>
+
+    <!-- Speed -->
+    <text class="label" x="30" y="240">🚀 Speed</text>
+    <rect class="stat-bg" x="170" y="228" width="250" height="14"/>
+    <rect class="stat-fill-spd" x="170" y="228" width="200" height="14"/>
+    <text class="quest-pct" x="430" y="240">80% faster deploys</text>
+
+    <!-- Resilience -->
+    <text class="label" x="30" y="264">🛡 Resilience</text>
+    <rect class="stat-bg" x="170" y="252" width="250" height="14"/>
+    <rect class="stat-fill-res" x="170" y="252" width="237" height="14"/>
+    <text class="quest-pct" x="430" y="264">99.9% cluster uptime</text>
+
+    <!-- Versatility -->
+    <text class="label" x="30" y="288">🎯 Versatility</text>
+    <rect class="stat-bg" x="170" y="276" width="250" height="14"/>
+    <rect class="stat-fill-ver" x="170" y="276" width="225" height="14"/>
+    <text class="quest-pct" x="430" y="288">6 languages mastered</text>
+
+    <!-- Scale -->
+    <text class="label" x="30" y="312">📊 Scale</text>
+    <rect class="stat-bg" x="170" y="300" width="250" height="14"/>
+    <rect class="stat-fill-scl" x="170" y="300" width="240" height="14"/>
+    <text class="quest-pct" x="430" y="312">1M+ daily transactions</text>
+  </g>
+
+  <!-- ACTIVE QUESTS SECTION -->
+  <g class="fade-3">
+    <text class="heading" x="30" y="352">▸ ACTIVE QUESTS</text>
+    <line class="divider" x1="30" y1="360" x2="820" y2="360"/>
+
+    <!-- Quest 1 -->
+    <text class="quest-text" x="30" y="384">Co-Learning Platform</text>
+    <rect class="quest-bg" x="230" y="372" width="400" height="14"/>
+    <rect class="quest-fill-1" x="230" y="372" width="320" height="14"/>
+    <text class="quest-pct" x="640" y="384">80%</text>
+    <text class="label" x="680" y="384">Collaborative education</text>
+
+    <!-- Quest 2 -->
+    <text class="quest-text" x="30" y="410">AI Agent Systems</text>
+    <rect class="quest-bg" x="230" y="398" width="400" height="14"/>
+    <rect class="quest-fill-2" x="230" y="398" width="360" height="14"/>
+    <text class="quest-pct" x="640" y="410">90%</text>
+    <text class="label" x="680" y="410">Monitoring &amp; optimization</text>
+
+    <!-- Quest 3 -->
+    <text class="quest-text" x="30" y="436">Blockchain DID</text>
+    <rect class="quest-bg" x="230" y="424" width="400" height="14"/>
+    <rect class="quest-fill-3" x="230" y="424" width="280" height="14"/>
+    <text class="quest-pct" x="640" y="436">70%</text>
+    <text class="label" x="680" y="436">Decentralized credentials</text>
+  </g>
+
+  <!-- QUOTE -->
+  <g class="fade-5">
+    <line class="divider" x1="30" y1="458" x2="820" y2="458"/>
+    <text class="quote" x="30" y="482">$ echo "I think in systems, write in Python/TS/Java/C++,</text>
+    <text class="quote" x="30" y="500">  and believe the best code is the code that scales itself."</text>
+    <rect class="blink" x="515" y="489" width="8" height="14" fill="#58a6ff"/>
+  </g>
+</svg>

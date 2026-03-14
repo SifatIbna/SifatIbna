@@ -1,10 +1,3 @@
-<!-- 
-  ╔═══════════════════════════════════════════════╗
-  ║  SIFAT IBNA AMIN · github.com/SifatIbna      ║
-  ║  Senior Software Engineer · Intelligent Machines ║
-  ╚═══════════════════════════════════════════════╝
--->
-
 <div align="center">
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=200&section=header&text=SIFAT%20IBNA%20AMIN&fontSize=50&fontColor=58a6ff&fontAlignY=35&desc=Transforming%20Business%20using%20AI%20and%20Software%20Engineering&descSize=16&descAlignY=55&descAlign=50&animation=fadeIn"/>
@@ -22,105 +15,32 @@
 
 </div>
 
-<br/>
+---
 
-<!-- ═══════════════════════════════════════════ -->
-<!-- 🎮 PLAYER CARD — RPG CHARACTER SHEET STYLE -->
-<!-- ═══════════════════════════════════════════ -->
-
+<!-- 🎮 PLAYER CARD -->
 <div align="center">
 
-```
-╔══════════════════════════════════════════════════════════════════════════════╗
-║                                                                            ║
-║   ██████╗ ██╗      █████╗ ██╗   ██╗███████╗██████╗                         ║
-║   ██╔══██╗██║     ██╔══██╗╚██╗ ██╔╝██╔════╝██╔══██╗                        ║
-║   ██████╔╝██║     ███████║ ╚████╔╝ █████╗  ██████╔╝                        ║
-║   ██╔═══╝ ██║     ██╔══██║  ╚██╔╝  ██╔══╝  ██╔══██╗                        ║
-║   ██║     ███████╗██║  ██║   ██║   ███████╗██║  ██║                        ║
-║   ╚═╝     ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝                        ║
-║                                                                            ║
-║   Name    : Sifat Ibna Amin                                                ║
-║   Class   : Senior Software Engineer                                       ║
-║   Guild   : Intelligent Machines                                           ║
-║   Region  : Dhaka, Bangladesh 🇧🇩                                          ║
-║   Type    : Polyglot Programmer                                            ║
-║                                                                            ║
-║   ⚔️  STATS                                                                ║
-║   ├── 🧠 Intelligence ████████████████████░░░  4+ yrs shipping prod        ║
-║   ├── ⚡ Speed        ███████████████████░░░░  80% faster deploys          ║
-║   ├── 🛡️ Resilience   █████████████████████░░  99.9% uptime               ║
-║   ├── 🔮 Versatility  ████████████████████░░░  6 languages                 ║
-║   └── 📊 Scale        █████████████████████░░  1M+ daily txns             ║
-║                                                                            ║
-║   🎯 ACTIVE QUESTS                                                         ║
-║   ├── [■■■■■■■■░░] Co-Learning Platform — Reshaping collaborative edu     ║
-║   ├── [■■■■■■■■■░] AI Agents — Intelligent monitoring & optimization      ║
-║   └── [■■■■■■■░░░] Blockchain DID — Decentralized credential systems     ║
-║                                                                            ║
-║   💬 "I think in systems, write in Python/TypeScript/Java/C++,             ║
-║       and believe the best code is the code that scales itself."           ║
-║                                                                            ║
-╚══════════════════════════════════════════════════════════════════════════════╝
-```
+## 🎮 Player Card
+
+<img width="100%" src="./player-card.svg" alt="Player Card"/>
 
 </div>
 
 ---
 
-<!-- ═══════════════════════════════════════ -->
-<!-- 🎮 SKILL TREE                          -->
-<!-- ═══════════════════════════════════════ -->
-
+<!-- ⚔️ SKILL TREE -->
 <div align="center">
 
 ## ⚔️ Skill Tree
 
-</div>
+<img width="100%" src="./skill-tree.svg" alt="Skill Tree"/>
 
-<div align="center">
-
-```
-                           ┌──────────────────┐
-                           │   🧙 POLYGLOT    │
-                           │   PROGRAMMER     │
-                           └────────┬─────────┘
-                                    │
-              ┌─────────────────────┼─────────────────────┐
-              │                     │                     │
-      ┌───────▼───────┐    ┌───────▼───────┐    ┌───────▼───────┐
-      │  🗡️ BACKEND   │    │  ☁️ CLOUD     │    │  🤖 AI/ML    │
-      │  MASTERY      │    │  DOMINION     │    │  ARCANA      │
-      └───────┬───────┘    └───────┬───────┘    └───────┬───────┘
-              │                     │                     │
-     Python · Django       AWS · Azure · K8s     TensorFlow · YOLOv5
-     Java · Spring Boot    Docker · Jenkins       Computer Vision
-     TypeScript · Node     ArgoCD · MicroK8s      Scikit-learn
-     Flask · NestJS        CI/CD · GitOps          OpenCV
-              │                     │                     │
-      ┌───────▼───────┐    ┌───────▼───────┐    ┌───────▼───────┐
-      │  📊 DATA      │    │  ⛓️ BLOCKCHAIN │    │  🎭 FRONTEND │
-      │  ENGINEERING  │    │  FORGE        │    │  CRAFT       │
-      └───────────────┘    └───────────────┘    └───────────────┘
-              │                     │                     │
-     PostgreSQL · Redis    DID Certification     React · Electron
-     MongoDB · MySQL       Payment Gateways      Socket.IO
-     ETL · Airflow         Smart Contracts       Jest · Cypress
-     Data Pipelines        Multi-language        Real-time UIs
-```
-
-</div>
-
-<div align="center">
-
-<br/>
+<br/><br/>
 
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=python,typescript,javascript,java,cpp,bash,django,react,flask,spring,nodejs,nestjs,express&perline=13&theme=dark" alt="Tech Stack"/>
 </a>
-
 <br/>
-
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=aws,azure,kubernetes,docker,jenkins,git,postgresql,mongodb,redis,mysql,tensorflow,opencv,electron&perline=13&theme=dark" alt="Infrastructure"/>
 </a>
@@ -129,45 +49,18 @@
 
 ---
 
-<!-- ═══════════════════════════════════════ -->
-<!-- 🏆 ACHIEVEMENT LOG                     -->
-<!-- ═══════════════════════════════════════ -->
-
+<!-- 🏆 ACHIEVEMENTS -->
 <div align="center">
 
 ## 🏆 Achievement Log
 
-</div>
+<img width="100%" src="./achievements.svg" alt="Achievements"/>
 
-```
-┌──────────────────────────────────────────────────────────────────────────┐
-│                                                                          │
-│  🏅 LEGENDARY                                                            │
-│  ├── 🌏 [Served 4,500+ Companies]  — Blockchain gateway across Asia     │
-│  └── 💰 [1M+ Daily Transactions]   — Enterprise data pipeline mastery   │
-│                                                                          │
-│  🥇 EPIC                                                                 │
-│  ├── 🛡️ [99.9% Cluster Uptime]     — MicroK8s 3-node HA cluster        │
-│  ├── 🚀 [80% Faster Deployments]   — Jenkins + ArgoCD CI/CD pipeline   │
-│  └── 📊 [70% Faster Queries]       — PostgreSQL indexing & partitioning │
-│                                                                          │
-│  🥈 RARE                                                                 │
-│  ├── 🧪 [95% Test Coverage]        — Jest + Cypress comprehensive suite │
-│  ├── 🤖 [95% CV Accuracy]          — YOLOv5 retail analytics system     │
-│  └── 📈 [60% User Base Growth]     — Visual script language builder     │
-│                                                                          │
-│  ⏱️ EFFICIENCY                                                           │
-│  └── 📋 [90% Less Manual Work]     — Automated reporting pipeline       │
-│                                                                          │
-└──────────────────────────────────────────────────────────────────────────┘
-```
+</div>
 
 ---
 
-<!-- ═══════════════════════════════════════ -->
-<!-- 📊 GITHUB ANALYTICS                    -->
-<!-- ═══════════════════════════════════════ -->
-
+<!-- 📊 BATTLE STATS -->
 <div align="center">
 
 ## 📊 Battle Stats
@@ -192,10 +85,7 @@
 
 ---
 
-<!-- ═══════════════════════════════════════ -->
-<!-- 🐍 SNAKE ANIMATION                     -->
-<!-- ═══════════════════════════════════════ -->
-
+<!-- 🐍 SNAKE -->
 <div align="center">
 
 ## 🐍 Contribution Snake
@@ -210,10 +100,7 @@
 
 ---
 
-<!-- ═══════════════════════════════════════ -->
-<!-- 📈 ACTIVITY GRAPH                      -->
-<!-- ═══════════════════════════════════════ -->
-
+<!-- 📈 ACTIVITY -->
 <div align="center">
 
 ## 📈 Activity Graph
@@ -227,10 +114,7 @@
 
 ---
 
-<!-- ═══════════════════════════════════════ -->
-<!-- 🏆 TROPHIES                            -->
-<!-- ═══════════════════════════════════════ -->
-
+<!-- 🏅 TROPHIES -->
 <div align="center">
 
 ## 🏅 Trophy Case
@@ -244,30 +128,18 @@
 
 ---
 
-<!-- ═══════════════════════════════════════ -->
-<!-- 🎮 GAME OVER — CONNECT                -->
-<!-- ═══════════════════════════════════════ -->
-
+<!-- 🎮 CONNECT -->
 <div align="center">
 
-```
-╔══════════════════════════════════════════════════════╗
-║                                                      ║
-║   🎮  WANT TO TEAM UP?                               ║
-║                                                      ║
-║   > LinkedIn .... www.linkedin.com/in/sifatibnaamin9 ║
-║   > Portfolio ... sifat-portflio.netlify.app          ║
-║   > Email ...... sifatibna.amin9@gmail.com           ║
-║                                                      ║
-║   "The best systems are the ones you forget          ║
-║    are there — until you try to live without them."  ║
-║                                                      ║
-║                    [ PRESS START ]                    ║
-║                                                      ║
-╚══════════════════════════════════════════════════════╝
-```
+### 🎮 Want to team up?
 
-<br/>
+<a href="https://www.linkedin.com/in/sifatibnaamin9"><img src="https://img.shields.io/badge/Let's_Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+&nbsp;
+<a href="mailto:sifatibna.amin9@gmail.com"><img src="https://img.shields.io/badge/Say_Hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+&nbsp;
+<a href="https://sifat-portflio.netlify.app/"><img src="https://img.shields.io/badge/My_Work-1f6feb?style=for-the-badge&logo=safari&logoColor=white"/></a>
+
+<br/><br/>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=SifatIbna&color=1f6feb&style=flat-square&label=Profile+Views)
 

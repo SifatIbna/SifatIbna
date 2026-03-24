@@ -137,9 +137,9 @@
   </g>
 
   <!-- Tagline -->
-  <g class="tagline">
+  <!-- <g class="tagline">
     <text x="425" y="190" text-anchor="middle" fill="#8b949e" font-family="'Segoe UI','Helvetica Neue',sans-serif" font-size="13" letter-spacing="1">@ Intelligent Machines · Dhaka, Bangladesh</text>
-  </g>
+  </g> -->
 
   <!-- Animated tagline with cursor -->
   <g class="tagline">

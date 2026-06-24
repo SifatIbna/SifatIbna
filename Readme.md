@@ -18,7 +18,7 @@
 
 I'm **Sifat** — a **polyglot programmer** who thinks in systems and writes in whatever language the problem demands. Python on Monday, TypeScript on Tuesday, Java when it gets serious, C++ when it gets critical.
 
-I'm currently a **Senior Software Engineer** at **Intelligent Machines**, where I build AI-driven platforms and cloud-native systems that actually matter in production. Over 4+ years, I've shipped software serving **thousands of users across Asia** — from blockchain payment gateways handling enterprise transactions across Japan, China, and Korea, to AI-powered Co-Learning platforms that reshape how people learn together.
+I'm currently a **Senior Software Engineer** at **Intelligent Machines**, where I build AI-driven platforms and cloud-native systems that actually matter in production. Over 5+ years, I've shipped software serving **thousands of users across Asia** — from blockchain payment gateways handling enterprise transactions across Japan, China, and Korea, to AI-powered Co-Learning platforms that reshape how people learn together.
 
 I graduated from **BUET** (Bangladesh University of Engineering and Technology), and I've been obsessed with one question ever since: *how do you build systems that are smart, trustworthy, and can handle real scale?*
 
